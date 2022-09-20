@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Денис Ромоданов](https://up.htmlacademy.ru/htmlcss/35/user/2209003).
-* Наставник: `Неизвестно`.
+- Студент: [Денис Ромоданов](https://up.htmlacademy.ru/htmlcss/35/user/2209003).
+- Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
