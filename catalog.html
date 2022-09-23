@@ -37,6 +37,90 @@
       </div>
     </header>
 
+    <!-- main -->
+    <main class="main-catalog">
+      <header class="main-catalog-header">
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Каталог</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link breadcrumbs-current-link">Сливочное мороженое</a>
+          </li>
+        </ol>
+        <h1 class="catalog-title">Сливочное мороженое</h1>
+      </header>
+      <section class="catalog-flavors">
+        <h2 class="catalog-flavors-title visully-hidden">Список вкусов вместе с формой сортировки.</h2>
+        <form class="sorting-form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="sorting-params">
+            <legend class="sorting-params-legend">
+              <label class="sorting-params-label" for="sorting-params-select">Сортировка:</label>
+            </legend>
+            <select class="sorting-params-select" name="sorting-params" id="sorting-params-select">
+              <option class="sorting-params-option" value="popularity">по популярности</option>
+            </select>
+          </fieldset>
+          <fieldset class="sorting-price">
+            <legend class="sorting-price-legend">
+              <label class="sorting-price-label" for="sorting-price-input">Цена: 100 ₽ – 500 ₽</label>
+            </legend>
+            <input class="sorting-price-input" id="sorting-price-input" type="range" name="price" min="100" max="500">
+          </fieldset>
+          <fieldset class="sorting-fat">
+            <legend class="sorting-fat-legend">Жирность</legend>
+            <ul class="sorting-fat-list">
+              <li class="sorting-fat-item">
+                <input class="sorting-fat-radio" id="none" type="radio" name="fat" value="none">
+                <label class="sorting-fat-label" for="none">0%</label>
+              </li>
+              <li class="sorting-fat-item">
+                <input class="sorting-fat-radio" id="less-10" type="radio" name="fat" value="less-10" checked>
+                <label class="sorting-fat-label" for="less-10">до 10%</label>
+              </li>
+              <li class="sorting-fat-item">
+                <input class="sorting-fat-radio" id="less-30" type="radio" name="fat" value="less-30">
+                <label class="sorting-fat-label" for="less-30">до 30%</label>
+              </li>
+              <li class="sorting-fat-item">
+                <input class="sorting-fat-radio" id="over-30" type="radio" name="fat" value="over-30">
+                <label class="sorting-fat-label" for="over-30">выше 30%</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="sorting-fillers">
+            <legend class="sorting-fillers-legend">Наполнители</legend>
+            <ul class="sorting-fillers-list">
+              <li class="sorting-fillers-item">
+                <input class="sorting-fillers-checkbox" id="chocolate" type="checkbox" name="chocolate" checked>
+                <label class="sorting-fillers-label" for="chocolate">шоколадные</label>
+              </li>
+              <li class="sorting-fillers-item">
+                <input class="sorting-fillers-checkbox" id="sugar-sprinkles" type="checkbox" name="sugar-sprinkles" checked>
+                <label class="sorting-fillers-label" for="sugar-sprinkles">сахарные посыпки</label>
+              </li>
+              <li class="sorting-fillers-item">
+                <input class="sorting-fillers-checkbox" id="fruits" type="checkbox" name="fruits">
+                <label class="sorting-fillers-label" for="fruits">фрукты</label>
+              </li>
+              <li class="sorting-fillers-item">
+                <input class="sorting-fillers-checkbox" id="syrups" type="checkbox" name="syrups">
+                <label class="sorting-fillers-label" for="syrups">сиропы</label>
+              </li>
+              <li class="sorting-fillers-item">
+                <input class="sorting-fillers-checkbox" id="jams" type="checkbox" name="jams">
+                <label class="sorting-fillers-label" for="jams">джемы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="sorting-submit">Применить</button>
+        </form>
+      </section>
+    </main>
+
     <!-- footer -->
     <footer class="page-footer">
       <div class="page-footer-social-media">
