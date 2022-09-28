@@ -3,6 +3,7 @@
   /* colors */
   --pink: #feafc3;
   --black: #2d3440;
+  --light-pink: rgba(252, 252, 252, 0.3);
 }
 
 /* fonts */
@@ -39,4 +40,36 @@ body {
   line-height: 22px;
 
   background-color: var(--pink);
+}
+
+/* common styles */
+.pink-button {
+  border: none;
+  background-color: var(--light-pink);
+  cursor: pointer;
+}
+
+/* header */
+.page-header {
+  line-height: 20px;
+}
+
+.catalog-button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.page-header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.phone-link {
+  font-weight: 700;
+}
+
+.sign-in-button,
+.shopping-cart-button {
+  font-size: 14px;
 }
