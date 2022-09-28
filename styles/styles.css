@@ -5,6 +5,7 @@
   --black: #2d3440;
   --light-pink: rgba(252, 252, 252, 0.3);
   --white: #fcfcfc;
+  --dark-pink: #ff7799;
 }
 
 /* fonts */
@@ -99,4 +100,28 @@ body {
   color: inherit;
   line-height: 20px;
   text-align: center;
+}
+
+/* index => gifts */
+.gift-card {
+  background-color: var(--dark-pink);
+}
+
+.gifts-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.gifts-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.gift-link {
+  font-weight: 700;
+  color: inherit;
+  line-height: 20px;
 }
