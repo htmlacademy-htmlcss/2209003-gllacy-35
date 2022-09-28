@@ -8,6 +8,7 @@
   --dark-pink: #ff7799;
   --gray: #565c66;
   --red: #ff2f64;
+  --light-gray: #b9b9b9;
 }
 
 /* fonts */
@@ -61,8 +62,10 @@ body {
 }
 
 .red-button {
+  color: var(--white);
   border: none;
   background-color: var(--red);
+  text-align: center;
   text-decoration: none;
   cursor: pointer;
 }
@@ -202,5 +205,19 @@ body {
 
 .new-blog-text {
   color: var(--gray);
+  line-height: 20px;
+}
+
+/* index => mailing-list */
+.mailing-list {
+  background-color: var(--white);
+}
+
+.mailing-list-text {
+  color: var(--gray);
+}
+
+.mailing-list-form-input-mail {
+  color: var(--light-gray);
   line-height: 20px;
 }
