@@ -6,6 +6,8 @@
   --light-pink: rgba(252, 252, 252, 0.3);
   --white: #fcfcfc;
   --dark-pink: #ff7799;
+  --gray: #565c66;
+  --red: #ff2f64;
 }
 
 /* fonts */
@@ -56,6 +58,13 @@ body {
   background-color: var(--white);
   cursor: pointer;
   text-decoration: none;
+}
+
+.red-button {
+  border: none;
+  background-color: var(--red);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* header */
@@ -124,4 +133,34 @@ body {
   font-weight: 700;
   color: inherit;
   line-height: 20px;
+}
+
+/* index => flavors */
+.flavors-main-text {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.flavors-item {
+  background-color: var(--white);
+}
+
+.flavors-subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.flavors-desc {
+  color: var(--gray);
+  text-align: center;
+}
+
+.flavors-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
