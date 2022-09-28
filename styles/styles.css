@@ -1,3 +1,10 @@
+/* variables */
+:root {
+  /* colors */
+  --pink: #feafc3;
+  --black: #2d3440;
+}
+
 /* fonts */
 @font-face {
   font-family: "Inter";
@@ -21,4 +28,15 @@
   font-weight: 900;
   src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
+}
+
+/* styles */
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 16px;
+  line-height: 22px;
+
+  background-color: var(--pink);
 }
