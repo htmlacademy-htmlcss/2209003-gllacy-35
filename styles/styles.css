@@ -230,3 +230,43 @@ body {
   font-weight: 700;
   line-height: 20px;
 }
+
+/* index => delivery */
+.delivery {
+  background-color: var(--white);
+  background-image: url("../images/background/delivery-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.delivery-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.delivery-text,
+.delivery-form-text {
+  color: var(--gray);
+}
+
+.delivery-form {
+  background-color: var(--white);
+}
+
+.delivery-form-label {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.delivery-input {
+  color: var(--light-gray);
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.delivery-form-submit {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
