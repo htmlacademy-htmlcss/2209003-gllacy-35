@@ -49,12 +49,14 @@ body {
 
 /* common styles */
 .pink-button {
+  color: var(--black);
   border: none;
   background-color: var(--light-pink);
   cursor: pointer;
 }
 
 .light-button {
+  color: var(--black);
   border: none;
   background-color: var(--white);
   cursor: pointer;
@@ -109,7 +111,6 @@ body {
 
 .introduction-button {
   font-weight: 700;
-  color: inherit;
   line-height: 20px;
   text-align: center;
 }
@@ -134,7 +135,6 @@ body {
 
 .gift-link {
   font-weight: 700;
-  color: inherit;
   line-height: 20px;
 }
 
