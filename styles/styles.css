@@ -222,6 +222,7 @@ body {
 
 .mailing-list-form-input-mail {
   color: var(--light-gray);
+  font-size: 16px;
   line-height: 20px;
 }
 
