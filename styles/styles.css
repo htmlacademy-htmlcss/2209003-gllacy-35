@@ -276,3 +276,9 @@ body {
 .breadcrumbs-current-link {
   border-bottom: 1px solid var(--black);
 }
+
+/* catalog => sorting-form */
+.sorting-form {
+  font-size: 14px;
+  line-height: 20px;
+}
