@@ -263,3 +263,28 @@ body {
   color: var(--black);
   text-decoration: none;
 }
+
+/* header */
+.page-footer {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.page-footer-link {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.page-footer-for-suppliers {
+  font-weight: 700;
+}
+
+.page-footer-copyright-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.page-footer-copyright-link {
+  color: var(--black);
+  text-decoration: none;
+}
