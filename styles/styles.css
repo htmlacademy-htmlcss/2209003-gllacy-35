@@ -48,28 +48,38 @@ body {
 }
 
 /* common styles */
+.pink-button,
+.light-button,
+.red-button {
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .pink-button {
   color: var(--black);
-  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
   background-color: var(--light-pink);
-  cursor: pointer;
 }
 
 .light-button {
   color: var(--black);
-  border: none;
+  font-weight: 700;
+  line-height: 20px;
+  font-size: 16px;
+  text-align: center;
   background-color: var(--white);
-  cursor: pointer;
-  text-decoration: none;
 }
 
 .red-button {
   color: var(--white);
-  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   background-color: var(--red);
   text-align: center;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 /* header */
@@ -94,12 +104,6 @@ body {
   font-weight: 700;
 }
 
-.sign-in-button,
-.shopping-cart-button {
-  font-size: 14px;
-  line-height: 20px;
-}
-
 /* index => introduction */
 .introduction-short-desc {
   font-weight: 900;
@@ -110,12 +114,6 @@ body {
 .introduction-big-desc {
   font-size: 18px;
   line-height: 24px;
-}
-
-.introduction-button {
-  font-weight: 700;
-  line-height: 20px;
-  text-align: center;
 }
 
 /* index => gifts */
@@ -134,11 +132,6 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-}
-
-.gift-link {
-  font-weight: 700;
-  line-height: 20px;
 }
 
 /* index => flavors */
@@ -226,12 +219,6 @@ body {
   line-height: 20px;
 }
 
-.mailing-list-form-submit {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-}
-
 /* index => delivery */
 .delivery {
   background-color: var(--white);
@@ -266,12 +253,6 @@ body {
   font-size: 16px;
 }
 
-.delivery-form-submit {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-}
-
 /* index => contacts */
 .contacts {
   background-color: var(--white);
@@ -298,10 +279,4 @@ body {
 .contacts-phone-link {
   color: var(--black);
   text-decoration: none;
-}
-
-.contacts-button {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
 }
