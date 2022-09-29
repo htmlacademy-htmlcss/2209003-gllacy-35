@@ -271,3 +271,37 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
+
+/* index => contacts */
+.contacts {
+  background-color: var(--white);
+  background-image: url("../images/background/contacts-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.contacts-wrapper {
+  font-style: normal;
+  background-color: var(--white);
+}
+
+.contacts-text {
+  color: var(--gray )
+}
+
+.contacts-main-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.contacts-phone-link {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.contacts-button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
