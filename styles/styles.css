@@ -83,7 +83,6 @@ body {
 }
 
 .text-input {
-  color: var(--light-gray);
   line-height: 20px;
   font-size: 16px;
 }
