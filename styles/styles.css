@@ -282,3 +282,9 @@ body {
   font-size: 14px;
   line-height: 20px;
 }
+
+/* catalog => catalog-pagination */
+.flavors-pagination-button-current {
+  border: none;
+  /* На будущее */
+}
