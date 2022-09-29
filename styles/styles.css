@@ -88,6 +88,12 @@ body {
   font-size: 16px;
 }
 
+.boldest-text {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
 /* header */
 .page-header {
   line-height: 20px;
@@ -112,9 +118,7 @@ body {
 
 /* index => introduction */
 .introduction-short-desc {
-  font-weight: 900;
   font-size: 36px;
-  line-height: 46px;
 }
 
 .introduction-big-desc {
@@ -128,9 +132,6 @@ body {
 }
 
 .gifts-title {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 46px;
   text-align: center;
 }
 
@@ -142,9 +143,6 @@ body {
 
 /* index => flavors */
 .flavors-main-text {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 46px;
   text-align: center;
 }
 
@@ -172,9 +170,6 @@ body {
 
 /* index => about-us */
 .about-us-title {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 46px;
   text-align: center;
 }
 
@@ -225,12 +220,6 @@ body {
   background-image: url("../images/background/delivery-bg.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-}
-
-.delivery-title {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 46px;
 }
 
 .delivery-text,
