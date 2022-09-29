@@ -265,3 +265,14 @@ body {
   font-size: 12px;
   line-height: 16px;
 }
+
+/* catalog => main-catalog-header */
+.breadcrumbs-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.breadcrumbs-current-link {
+  border-bottom: 1px solid var(--black);
+}
