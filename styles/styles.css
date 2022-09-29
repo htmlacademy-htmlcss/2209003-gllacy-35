@@ -82,6 +82,12 @@ body {
   text-align: center;
 }
 
+.text-input {
+  color: var(--light-gray);
+  line-height: 20px;
+  font-size: 16px;
+}
+
 /* header */
 .page-header {
   line-height: 20px;
@@ -213,12 +219,6 @@ body {
   color: var(--gray);
 }
 
-.mailing-list-form-input-mail {
-  color: var(--light-gray);
-  font-size: 16px;
-  line-height: 20px;
-}
-
 /* index => delivery */
 .delivery {
   background-color: var(--white);
@@ -245,12 +245,6 @@ body {
 .delivery-form-label {
   font-weight: 700;
   line-height: 20px;
-}
-
-.delivery-input {
-  color: var(--light-gray);
-  line-height: 20px;
-  font-size: 16px;
 }
 
 /* index => contacts */
