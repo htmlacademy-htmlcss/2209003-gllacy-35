@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body>
     <!-- header -->
@@ -13,25 +14,25 @@
         <a class="logo">
           <img class="logo-image" src="./images/logo.svg" alt="Логотип сайта Глейси." width="137" height="56">
         </a>
-        <button class="catalog-button" type="button">Каталог</button>
+        <button class="inherit-button catalog-button" type="button">Каталог</button>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Доставка и оплата</a>
+              <a class="inherit-button navigation-link" href="#">Доставка и оплата</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О компании</a>
+              <a class="inherit-button navigation-link" href="#">О компании</a>
             </li>
           </ul>
         </nav>
-        <a class="phone-link" href="tel:+78005558628" aria-label="Номер телефона для связи.">+7 800 555-86-28</a>
+        <a class="inherit-button phone-link" href="tel:+78005558628" aria-label="Номер телефона для связи.">+7 800 555-86-28</a>
       </div>
       <div>
-        <button class="search-button">
+        <button class="pink-button search-button">
           <span class="visually-hidden">Поиск по сайту.</span>
         </button>
-        <button class="sign-in-button" aria-label="Вход в аккаунт.">Вход</button>
-        <button class="shopping-cart-button" aria-label="Корзина выбранных товаров.">2 товара</button>
+        <button class="pink-button sign-in-button" aria-label="Вход в аккаунт.">Вход</button>
+        <button class="pink-button shopping-cart-button" aria-label="Корзина выбранных товаров.">2 товара</button>
       </div>
     </header>
 
@@ -40,25 +41,25 @@
       <header class="main-catalog-header">
         <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="./index.html">Главная</a>
+            <a class="inherit-button breadcrumbs-link" href="./index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#">Каталог</a>
+            <a class="inherit-button breadcrumbs-link" href="#">Каталог</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link breadcrumbs-current-link">Сливочное мороженое</a>
+            <a class="inherit-button breadcrumbs-link breadcrumbs-current-link">Сливочное мороженое</a>
           </li>
         </ol>
-        <h1 class="catalog-title">Сливочное мороженое</h1>
+        <h1 class="boldest-text catalog-title">Сливочное мороженое</h1>
       </header>
       <section class="catalog-flavors">
-        <h2 class="catalog-flavors-title visully-hidden">Список вкусов вместе с формой сортировки.</h2>
+        <h2 class="visully-hidden">Список вкусов вместе с формой сортировки.</h2>
         <form class="sorting-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="sorting-params">
             <legend class="sorting-params-legend">
               <label class="sorting-params-label" for="sorting-params-select">Сортировка:</label>
             </legend>
-            <select class="sorting-params-select" name="sorting-params" id="sorting-params-select">
+            <select class="pink-button sorting-params-select" name="sorting-params" id="sorting-params-select" aria-label="Сортировка по характеристике.">
               <option class="sorting-params-option" value="popularity">по популярности</option>
             </select>
           </fieldset>
@@ -114,7 +115,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="sorting-submit">Применить</button>
+          <button class="pink-button sorting-submit">Применить</button>
         </form>
         <ul class="flavors-list">
           <li class="flavors-item">
@@ -228,27 +229,27 @@
         </ul>
         <ol class="flavors-pagination">
           <li class="flavors-pagination-item">
-            <a class="flavors-pagination-button" href="#">
+            <a class="inherit-button flavors-pagination-button" href="#">
               <span class="visually-hidden">Перейти на предыдущую страницу вкусов.</span>
             </a>
           </li>
           <li class="flavors-pagination-item">
-            <a class="flavors-pagination-button" href="#">1</a>
+            <a class="inherit-button flavors-pagination-button" href="#">1</a>
           </li>
           <li class="flavors-pagination-item">
-            <a class="flavors-pagination-button" href="#">2</a>
+            <a class="inherit-button flavors-pagination-button" href="#">2</a>
           </li>
           <li class="flavors-pagination-item">
-            <a class="flavors-pagination-button flavors-pagination-button-current">3</a>
+            <a class="light-button flavors-pagination-button flavors-pagination-button-current">3</a>
           </li>
           <li class="flavors-pagination-item">
-            <a class="flavors-pagination-button" href="#">4</a>
+            <a class="inherit-button flavors-pagination-button" href="#">4</a>
           </li>
           <li class="flavors-pagination-item">
-            <a class="flavors-pagination-button" href="#">5</a>
+            <a class="inherit-button flavors-pagination-button" href="#">5</a>
           </li>
           <li class="flavors-pagination-item">
-            <a class="flavors-pagination-button" href="#">
+            <a class="inherit-button flavors-pagination-button" href="#">
               <span class="visually-hidden">Перейти на следующую страницу вкусов.</span>
             </a>
           </li>
@@ -261,27 +262,27 @@
     <footer class="page-footer">
       <ul class="social-media page-footer--social-media-list">
         <li class="social-media-item page-footer-social-media-item">
-          <a class="social-media-link visually-hidden" href="https://t.me/htmlacademy">Телеграм.</a>
+          <a class="light-button social-media-link visually-hidden" href="https://t.me/htmlacademy">Телеграм.</a>
         </li>
         <li class="social-media-item page-footer-social-media-item">
-          <a class="social-media-link visually-hidden" href="https://vk.com/htmlacademy">ВК.</a>
+          <a class="light-button social-media-link visually-hidden" href="https://vk.com/htmlacademy">ВК.</a>
         </li>
         <li class="social-media-item page-footer-social-media-item">
-          <a class="social-media-link visually-hidden" href="https://www.youtube.com/user/htmlacademyru">Ютюб.</a>
+          <a class="light-button social-media-link visually-hidden" href="https://www.youtube.com/user/htmlacademyru">Ютюб.</a>
         </li>
       </ul>
       <ul class="page-footer-list">
         <li class="page-footer-item page-footer-for-suppliers">
-          <a class="page-footer-link" href="#">Для поставщиков</a>
+          <a class="inherit-button page-footer-link" href="#">Для поставщиков</a>
         </li>
         <li class="page-footer-item">
-          <a href="#" class="page-footer-link">Наши документы</a>
+          <a class="inherit-button page-footer-link" href="#">Наши документы</a>
         </li>
         <li class="page-footer-item">
-          <a class="page-footer-link" href="#">О производстве</a>
+          <a class="inherit-button page-footer-link" href="#">О производстве</a>
         </li>
         <li class="page-footer-item">
-          <a class="page-footer-link" href="#">О производстве</a>
+          <a class="inherit-button page-footer-link" href="#">О производстве</a>
         </li>
       </ul>
       <div class="page-footer-copyright">
@@ -289,7 +290,7 @@
           <img src="./images/html-academy-logo.svg" alt="Логотип HTML Academy" width="93" height="27">
         </a>
         <p class="page-footer-copyright-text">
-          Сделано в <a class="page-footer-copyright-link" href="https://htmlacademy.ru/">.html academy</a> &copy; 2021
+          Сделано в <a class="inherit-button page-footer-copyright-link" href="https://htmlacademy.ru/">.html academy</a> &copy; 2021
         </p>
       </div>
     </footer>
