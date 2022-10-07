@@ -230,7 +230,17 @@ body {
   color: var(--gray);
 }
 
+/* index => aside */
+.aside-index-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* index => new-blog */
+.new-blog-link {
+  flex-basis: 570px;
+}
+
 .new-blog {
   background-color: var(--white);
   background-image: url("../images/background/new-blog-bg.jpg");
@@ -251,6 +261,7 @@ body {
 
 /* index => mailing-list */
 .mailing-list {
+  flex-basis: 570px;
   background-color: var(--white);
 }
 
