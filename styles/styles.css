@@ -218,12 +218,12 @@ body {
 }
 
 /* index => about-us */
-.about-us-title {
-  text-align: center;
+.about-us {
+  background-color: var(--white);
 }
 
-.about-us-list {
-  background-color: var(--white);
+.about-us-title {
+  text-align: center;
 }
 
 .about-us-item {
