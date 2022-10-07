@@ -37,7 +37,17 @@
 }
 
 /* styles */
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  min-height: 100%;
+
   font-family: "Inter", sans-serif;
   font-weight: 400;
   color: var(--black);
@@ -111,6 +121,11 @@ body {
 
 .phone-link {
   font-weight: 700;
+}
+
+/* index => main-index */
+.main-index {
+  flex-grow: 1;
 }
 
 /* index => introduction */
@@ -251,7 +266,7 @@ body {
   line-height: 24px;
 }
 
-/* header */
+/* footer */
 .page-footer {
   font-size: 14px;
   line-height: 20px;
@@ -264,6 +279,11 @@ body {
 .page-footer-copyright-text {
   font-size: 12px;
   line-height: 16px;
+}
+
+/* catalog => main-catalog */
+.main-catalog {
+  flex-grow: 1;
 }
 
 /* catalog => main-catalog-header */
