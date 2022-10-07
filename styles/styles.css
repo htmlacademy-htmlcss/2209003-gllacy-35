@@ -139,6 +139,23 @@ body {
 }
 
 /* index => introduction */
+.introduction-container {
+  display: flex;
+}
+
+.introduction-desc {
+  flex-basis: 470px;
+  margin-left: 70px;
+}
+
+.introduction-images {
+  flex-basis: 630px;
+}
+
+.introduction-list {
+  padding: 0;
+}
+
 .introduction-short-desc {
   font-size: 36px;
 }
