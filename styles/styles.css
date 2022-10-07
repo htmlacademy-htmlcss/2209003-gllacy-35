@@ -341,8 +341,27 @@ body {
   line-height: 20px;
 }
 
+.page-footer-container {
+  display: flex;
+}
+
+.page-footer-social-media {
+  padding: 0;
+  margin-left: 6px;
+  margin-right: 300px;
+}
+
 .page-footer-for-suppliers {
+  padding: 0;
+  margin-right: auto;
+}
+
+.page-footer-link-for-suppliers {
   font-weight: 700;
+}
+
+.page-footer-copyright {
+  margin-right: 15px;
 }
 
 .page-footer-copyright-text {
