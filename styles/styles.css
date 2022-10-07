@@ -187,6 +187,10 @@ body {
 }
 
 /* index => flavors */
+.flavors-list {
+  padding: 0;
+}
+
 .flavors-main-text {
   text-align: center;
 }
