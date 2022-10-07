@@ -166,7 +166,13 @@ body {
 }
 
 /* index => gifts */
+.gifts-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .gift-card {
+  flex-basis: 570px;
   background-color: var(--dark-pink);
 }
 
