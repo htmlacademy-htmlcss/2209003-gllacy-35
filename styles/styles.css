@@ -314,9 +314,15 @@ body {
   background-size: 100% auto;
 }
 
+.contacts-container {
+  width: 343px;
+  margin-left: 66px;
+
+  background-color: var(--white);
+}
+
 .contacts-wrapper {
   font-style: normal;
-  background-color: var(--white);
 }
 
 .contacts-text {
