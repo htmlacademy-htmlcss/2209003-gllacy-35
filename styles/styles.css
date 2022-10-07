@@ -277,6 +277,21 @@ body {
   background-size: 100% auto;
 }
 
+.delivery-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery-left-container {
+  flex-basis: 370px;
+  margin-left: 100px;
+}
+
+.delivery-right-container {
+  flex-basis: 500px;
+  margin-right: 65px;
+}
+
 .delivery-text,
 .delivery-form-text {
   color: var(--gray);

@@ -224,30 +224,36 @@
         </aside>
         <!-- delivery -->
         <section class="delivery">
-          <h2 class="boldest-text delivery-title">Доставка любимого мороженого на дом</h2>
-          <p class="delivery-text">
-            Хочется полакомиться любимым десертом, но нет времени
-            съездить в магазин? Закажите доставку мороженого на дом,
-            и курьер привезёт вам ваш заказ в течение часа!
-          </p>
-          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="delivery-form-text">
-              Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
-            </p>
-            <div class="delivery-date">
-              <label class="delivery-form-label delivery-date-label" for="delivery-date">Дата</label>
-              <input class="text-input delivery-input" id="delivery-date" type="text" name="date" placeholder="01.04.2020" required>
+          <div class="delivery-container">
+            <div class="delivery-left-container">
+              <h2 class="boldest-text delivery-title">Доставка любимого мороженого на дом</h2>
+              <p class="delivery-text">
+                Хочется полакомиться любимым десертом, но нет времени
+                съездить в магазин? Закажите доставку мороженого на дом,
+                и курьер привезёт вам ваш заказ в течение часа!
+              </p>
             </div>
-            <div class="delivery-phone">
-              <label class="delivery-form-label delivery-phone-label" for="delivery-phone">Телефон</label>
-              <input class="text-input delivery-input" id="delivery-phone" type="tel" name="phone" placeholder="+7 800 999-00-00" required>
+            <div class="delivery-right-container">
+              <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+                <p class="delivery-form-text">
+                  Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
+                </p>
+                <div class="delivery-date">
+                  <label class="delivery-form-label delivery-date-label" for="delivery-date">Дата</label>
+                  <input class="text-input delivery-input" id="delivery-date" type="text" name="date" placeholder="01.04.2020" required>
+                </div>
+                <div class="delivery-phone">
+                  <label class="delivery-form-label delivery-phone-label" for="delivery-phone">Телефон</label>
+                  <input class="text-input delivery-input" id="delivery-phone" type="tel" name="phone" placeholder="+7 800 999-00-00" required>
+                </div>
+                <div class="delivery-address">
+                  <label class="delivery-form-label delivery-address-label" for="delivery-address">Адрес</label>
+                  <input class="text-input delivery-input" id="delivery-address" type="text" name="address" placeholder="ул. Большая Конюшенная, 19/8" required>
+                </div>
+                <button class="red-button delivery-form-submit" type="submit">Отправить</button>
+              </form>
             </div>
-            <div class="delivery-address">
-              <label class="delivery-form-label delivery-address-label" for="delivery-address">Адрес</label>
-              <input class="text-input delivery-input" id="delivery-address" type="text" name="address" placeholder="ул. Большая Конюшенная, 19/8" required>
-            </div>
-            <button class="red-button delivery-form-submit" type="submit">Отправить</button>
-          </form>
+          </div>
         </section>
         <!-- contacts -->
         <section class="contacts">
