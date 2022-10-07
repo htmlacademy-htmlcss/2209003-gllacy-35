@@ -375,6 +375,10 @@ body {
 }
 
 /* catalog => main-catalog-header */
+.breadcrumbs {
+  padding: 0;
+}
+
 .breadcrumbs-link {
   font-weight: 700;
   font-size: 14px;
