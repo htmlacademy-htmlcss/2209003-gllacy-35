@@ -43,33 +43,55 @@
         <!-- introduction -->
         <section class="introduction">
           <h2 class="visually-hidden">Описание мороженого.</h2>
-          <div class="introduction-container">
-            <div class="introduction-desc">
-              <p class="boldest-text introduction-short-desc">
-                Нежный пломбира
-                с клубничным джемом
-              </p>
-              <p class="introduction-big-desc">
-                Натуральное мороженое из свежих сливок
-                и молока с вкуснейшим клубничным джемом –
-                это идеальный десерт для всей семьи.
-              </p>
-              <a class="light-button introduction-button" href="#">Заказать</a>
-            </div>
-            <div class="introduction-images">
-              <ul class="introduction-list">
-                <li class="introduction-item">
-                  <img class="introduction-image" src="./images/strawberry-ice-creame.png" alt="Клубничное мороженое" width="306" height="507">
-                </li>
-                <li class="introduction-item">
-                  <img class="introduction-image" src="./images/creamy-ice-cream.png" alt="Сливочное мороженое" width="66" height="150">
-                </li>
-                <li class="introduction-item">
-                  <img class="introduction-image" src="./images/marshmallow-ice-cream.png" alt="Карамельное мороженое" width="66" height="150">
-                </li>
-              </ul>
-            </div>
-          </div>
+          <ul class="introduction-list">
+            <li class="introduction-item introduction-current-item">
+              <div class="introduction-desc">
+                <p class="boldest-text introduction-short-desc">
+                  Нежный пломбира
+                  с клубничным джемом
+                </p>
+                <p class="introduction-big-desc">
+                  Натуральное мороженое из свежих сливок
+                  и молока с вкуснейшим клубничным джемом –
+                  это идеальный десерт для всей семьи.
+                </p>
+                <a class="light-button introduction-button" href="#">Заказать</a>
+              </div>
+              <img src="./images/strawberry-ice-creame.png" alt="Клубничное мороженое" width="306" height="507">
+            </li>
+            <li class="introduction-item">
+              <!-- Уберу hidden, когда реализую visually-hidden -->
+              <div class="visually-hidden introduction-desc" hidden>
+                <p class="boldest-text introduction-short">
+                  Сливочное мороженое
+                  со вкусом банана
+                </p>
+                <p class="introduction-big-desc">
+                  Сливочное мороженое с ярким банановым
+                  вкусом подарит вам свежесть и наслаждение
+                  даже в самый жаркий летний день.
+                </p>
+                <a class="light-button introduction-button" href="#">Заказать</a>
+              </div>
+              <img class="introduction-small-image" src="./images/creamy-ice-cream.png" alt="Сливочное мороженое" width="306" height="507">
+            </li>
+            <li class="introduction-item">
+              <!-- Уберу hidden, когда реализую visually-hidden -->
+              <div class="visually-hidden introduction-desc" hidden>
+                <p class="boldest-text introduction-short">
+                  Карамельный пломбир
+                  с маршмеллоу
+                </p>
+                <p class="introduction-big-desc">
+                  Необычный сладкий десерт с карамельным
+                  топпингом и кусочками зефира завоюет
+                  сердца сладкоежек всех возрастов.
+                </p>
+                <a class="light-button introduction-button" href="#">Заказать</a>
+              </div>
+              <img class="introduction-small-image" src="./images/marshmallow-ice-cream.png" alt="Карамельное мороженое" width="306" height="507">
+            </li>
+          </ul>
           <button class="introduction-previous-image" type="button">
             <span class="visually-hidden">Перейти на прошлую картинку.</span>
           </button>
