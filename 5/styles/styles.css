@@ -139,21 +139,27 @@ body {
 }
 
 /* index => introduction */
-.introduction-container {
+.introduction-list {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0;
 }
 
-.introduction-desc {
+.introduction-current-item {
+  display: flex;
+  flex-basis: 846px;
+}
+
+.introduction-current-item .introduction-desc {
   flex-basis: 470px;
   margin-left: 70px;
 }
 
-.introduction-images {
-  flex-basis: 630px;
-}
-
-.introduction-list {
-  padding: 0;
+.introduction-small-image {
+  width: 66px;
+  height: 150px;
 }
 
 .introduction-short-desc {
