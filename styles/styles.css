@@ -466,12 +466,47 @@ body {
 
 /* index => mailing-list */
 .mailing-list {
-  flex-basis: 570px;
   background-color: var(--white);
+  background-image: url("../images/background/mailing-list-bg.png");
+  background-size: 100% auto;
+
+  flex-basis: 570px;
+  padding: 6px;
+}
+
+.mailing-list-container {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--white);
+
+  padding: 0 26px;
 }
 
 .mailing-list-text {
   color: var(--gray);
+
+  margin-top: 26px;
+  margin-bottom: 42px;
+}
+
+.mailing-list-form {
+  display: flex;
+
+  margin-bottom: 26px;
+}
+
+.mailing-list-form-input-mail {
+  width: 330px;
+  margin-right: 14px;
+  padding: 14px 16px;
+  padding-right: 0;
+}
+
+.mailing-list-form-submit {
+  display: inline-block;
+
+  padding: 12px 32px;
 }
 
 /* index => delivery */
