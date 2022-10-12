@@ -293,24 +293,52 @@ body {
 }
 
 /* index => gifts */
+.gifts {
+  margin-bottom: 81px;
+}
+
+.gifts-title {
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 55px;
+}
+
 .gifts-container {
   display: flex;
   justify-content: space-between;
 }
 
-.gift-card {
+.gifts-card {
+  display: flex;
+
   flex-basis: 570px;
   background-color: var(--dark-pink);
 }
 
-.gifts-title {
-  text-align: center;
+.gifts-card-container {
+  margin: 36px;
+  margin-right: 0;
 }
 
 .gifts-subtitle {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.gifts-desc {
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.gifts-link {
+  display: inline-block;
+
+  padding: 12px 32px;
 }
 
 /* index => flavors */
