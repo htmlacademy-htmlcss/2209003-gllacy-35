@@ -517,6 +517,8 @@ body {
   background-image: url("../images/background/delivery-bg.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+
+  margin-bottom: 80px;
 }
 
 .delivery-container {
@@ -527,11 +529,24 @@ body {
 .delivery-left-container {
   flex-basis: 370px;
   margin-left: 100px;
+  margin-top: 167px;
 }
 
+.delivery-title {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.delivery-text {
+  margin: 0;
+  margin-bottom: 163px;
+}
+
+/* Реализую через grid */
 .delivery-right-container {
   flex-basis: 500px;
   margin-right: 65px;
+  margin-top: 64px;
 }
 
 .delivery-text,
