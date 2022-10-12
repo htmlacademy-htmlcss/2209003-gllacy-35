@@ -344,8 +344,19 @@ body {
 }
 
 /* index => flavors */
+.flavors {
+  margin-bottom: 80px;
+}
+
+.flavors-main-text {
+  margin: 0;
+  margin-bottom: 56px;
+}
+
 .flavors-list {
   padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .flavors-main-text {
