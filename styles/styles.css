@@ -569,11 +569,18 @@ body {
   background-image: url("../images/background/contacts-bg.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+
+  padding: 64px;
 }
 
 .contacts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
   width: 343px;
-  margin-left: 66px;
+  padding-top: 40px;
+  padding-left: 40px;
 
   background-color: var(--white);
 }
@@ -590,6 +597,31 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.contacts-address-text {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.contacts-address {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.contacts-phone-text {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.contacts-phone {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.contacts-button {
+  padding: 12px 32px;
+  margin-bottom: 40px;
 }
 
 /* footer */
