@@ -125,6 +125,26 @@ body {
   line-height: 46px;
 }
 
+/* social-media */
+.social-media {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social-media-item + .social-media-item {
+  margin-left: 16px;
+}
+
+.social-media-link {
+  display: block;
+
+  width: 24px;
+  height: 24px;
+}
+
 /* header */
 .page-header {
   line-height: 20px;
@@ -205,12 +225,18 @@ body {
 }
 
 /* index => introduction */
+.introduction {
+  margin-bottom: 80px;
+}
+
 .introduction-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .introduction-current-item {
@@ -223,18 +249,47 @@ body {
   margin-left: 70px;
 }
 
-.introduction-small-image {
-  width: 66px;
-  height: 150px;
-}
-
 .introduction-short-desc {
   font-size: 36px;
+
+  margin-top: 136px;
+  margin-bottom: 24px;
 }
 
 .introduction-big-desc {
   font-size: 18px;
   line-height: 24px;
+
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.introduction-button {
+  padding: 12px 32px;
+}
+
+.introduction-small-image {
+  width: 66px;
+  height: 150px;
+}
+
+.introduction-pagination {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.introduction-pagination-item + .introduction-pagination-item {
+  margin-left: 8px;
+}
+
+.introduction-pagination-button {
+  display: block;
+
+  width: 12px;
+  height: 12px;
 }
 
 /* index => gifts */
