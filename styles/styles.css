@@ -430,6 +430,8 @@ body {
 
 /* index => new-blog */
 .new-blog-link {
+  display: flex;
+
   flex-basis: 570px;
 }
 
