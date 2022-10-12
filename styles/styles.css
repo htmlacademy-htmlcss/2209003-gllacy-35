@@ -628,6 +628,8 @@ body {
 .page-footer {
   font-size: 14px;
   line-height: 20px;
+
+  padding-top: 48px;
 }
 
 .page-footer-container {
@@ -641,7 +643,9 @@ body {
 }
 
 .page-footer-for-suppliers {
+  margin: 0;
   padding: 0;
+  list-style-type: none;
   margin-right: auto;
 }
 
@@ -653,9 +657,18 @@ body {
   margin-right: 15px;
 }
 
+.logo-html-academy {
+  display: block;
+
+  margin-bottom: 14px;
+}
+
 .page-footer-copyright-text {
   font-size: 12px;
   line-height: 16px;
+
+  margin: 0;
+  margin-bottom: 48px;
 }
 
 /* catalog => main-catalog */
