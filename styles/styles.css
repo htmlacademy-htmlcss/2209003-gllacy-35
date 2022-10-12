@@ -130,18 +130,73 @@ body {
   line-height: 20px;
 }
 
+.page-header button,
+.pahe-header a {
+  display: block;
+}
+
 .page-header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  padding: 24px 0;
+}
+
+.page-header-left-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin-right: 16px;
 }
 
 .catalog-button {
   font-size: 16px;
   line-height: 20px;
+
+  padding: 8px 38px 8px 16px;
+}
+
+.navigation-list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-link {
+  padding: 8px 16px;
+}
+
+.page-header-right-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .phone-link {
   font-weight: 700;
+
+  padding: 6px 16px;
+}
+
+.search-button {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+}
+
+.sign-in-button {
+  padding: 6px 16px 6px 38px;
+  margin-right: 16px;
+}
+
+.shopping-cart-button {
+  padding: 6px 16px 6px 38px;
 }
 
 /* index => main-index */
