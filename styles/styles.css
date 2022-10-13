@@ -671,6 +671,11 @@ body {
   margin-bottom: 48px;
 }
 
+/* catalog => header */
+.page-header-catalog {
+  margin-bottom: 32px;
+}
+
 /* catalog => main-catalog */
 .main-catalog {
   flex-grow: 1;
@@ -678,7 +683,12 @@ body {
 
 /* catalog => main-catalog-header */
 .breadcrumbs {
+  display: flex;
+
   padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
@@ -687,8 +697,17 @@ body {
   line-height: 20px;
 }
 
+.breadcrumbs-item + .breadcrumbs-item {
+  margin-left: 28px;
+}
+
 .breadcrumbs-current-link {
   border-bottom: 1px solid var(--black);
+}
+
+.catalog-title {
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 /* catalog => sorting-form */
