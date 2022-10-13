@@ -718,6 +718,11 @@ body {
   margin-bottom: 44px;
 }
 
+/* catalog => flavors-list */
+.flavors-list-catalog {
+  margin-bottom: 57px;
+}
+
 /* catalog => catalog-pagination */
 .flavors-pagination-button-current {
   border: none;
