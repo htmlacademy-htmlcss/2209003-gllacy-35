@@ -710,6 +710,11 @@ body {
   margin-bottom: 40px;
 }
 
+/* catalog => flavors */
+.catalog-flavors {
+  border-bottom: 1px solid var(--light-pink);
+}
+
 /* catalog => sorting-form */
 .sorting-form {
   font-size: 14px;
@@ -723,8 +728,54 @@ body {
   margin-bottom: 57px;
 }
 
-/* catalog => catalog-pagination */
-.flavors-pagination-button-current {
-  border: none;
-  /* На будущее */
+/* catalog => flavors-pagination */
+.flavors-pagination-container {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 80px;
+}
+
+.flavors-pagination-link {
+  margin-left: auto;
+  margin-right: 335px;
+  padding: 12px 32px;
+}
+
+.flavors-pagination {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.flavors-pagination-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flavors-pagination-button {
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+
+  width: 24px;
+  height: 24px;
+}
+
+.flavors-pagination-item:first-child .flavors-pagination-button,
+.flavors-pagination-item:last-child .flavors-pagination-button {
+  width: 16px;
+  height: 16px;
+
+}
+
+.flavors-pagination-item:first-child .flavors-pagination-button {
+  margin-right: 8px;
+}
+
+.flavors-pagination-item:last-child .flavors-pagination-button {
+  margin-left: 8px;
 }
