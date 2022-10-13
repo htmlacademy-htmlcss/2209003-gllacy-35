@@ -714,6 +714,8 @@ body {
 .sorting-form {
   font-size: 14px;
   line-height: 20px;
+
+  margin-bottom: 44px;
 }
 
 /* catalog => catalog-pagination */
