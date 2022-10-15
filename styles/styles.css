@@ -246,13 +246,14 @@ body {
 
 .introduction-current-item .introduction-desc {
   flex-basis: 470px;
-  margin-left: 70px;
+  padding-top: 136px;
+  padding-left: 70px;
 }
 
 .introduction-short-desc {
   font-size: 36px;
 
-  margin-top: 136px;
+  margin: 0;
   margin-bottom: 24px;
 }
 
@@ -268,6 +269,7 @@ body {
   display: inline-block;
 
   padding: 12px 32px;
+  margin-bottom: 138px;
 }
 
 .introduction-small-image {
@@ -319,8 +321,9 @@ body {
 }
 
 .gifts-card-container {
-  margin: 36px;
-  margin-right: 0;
+  padding: 36px;
+  padding-right: 0;
+  padding-bottom: 0;
 }
 
 .gifts-subtitle {
@@ -341,6 +344,7 @@ body {
   display: inline-block;
 
   padding: 12px 32px;
+  margin-bottom: 36px;
 }
 
 /* index => flavors */
@@ -399,12 +403,15 @@ body {
   flex-direction: column;
 
   background-color: var(--white);
+
+  padding-top: 56px;
 }
 
 .about-us-title {
   text-align: center;
 
   margin: 56px 64px;
+  margin-top: 0;
 }
 
 .about-us-list {
@@ -445,6 +452,7 @@ body {
   background-size: 100% auto;
 
   padding-left: 32px;
+  padding-top: 33px;
 }
 
 .new-blog-text {
@@ -453,7 +461,7 @@ body {
   color: var(--gray);
   line-height: 20px;
 
-  margin-top: 33px;
+  margin: 0;
   margin-bottom: 12px;
 }
 
@@ -482,13 +490,14 @@ body {
 
   background-color: var(--white);
 
-  padding: 0 26px;
+  padding: 26px;
+  padding-bottom: 0;
 }
 
 .mailing-list-text {
   color: var(--gray);
 
-  margin-top: 26px;
+  margin: 0;
   margin-bottom: 42px;
 }
 
@@ -528,8 +537,8 @@ body {
 
 .delivery-left-container {
   flex-basis: 370px;
-  margin-left: 100px;
-  margin-top: 167px;
+  padding-left: 100px;
+  padding-top: 167px;
 }
 
 .delivery-title {
@@ -545,8 +554,8 @@ body {
 /* Реализую через grid */
 .delivery-right-container {
   flex-basis: 500px;
-  margin-right: 65px;
-  margin-top: 64px;
+  padding-right: 65px;
+  padding-top: 64px;
 }
 
 .delivery-text,
@@ -565,12 +574,15 @@ body {
 
 /* index => contacts */
 .contacts {
+  display: flex;
+
   background-color: var(--white);
   background-image: url("../images/background/contacts-bg.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 
-  padding: 64px;
+  padding-top: 64px;
+  padding-left: 64px;
 }
 
 .contacts-container {
@@ -581,6 +593,7 @@ body {
   width: 343px;
   padding-top: 40px;
   padding-left: 40px;
+  margin-bottom: 64px;
 
   background-color: var(--white);
 }
@@ -737,8 +750,8 @@ body {
 }
 
 .flavors-pagination-link {
-  margin-left: auto;
-  margin-right: 335px;
+  margin-left: 486px;
+  margin-right: auto;
   padding: 12px 32px;
 }
 
