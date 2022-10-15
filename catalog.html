@@ -9,10 +9,10 @@
   </head>
   <body>
     <!-- header -->
-    <header class="page-header">
+    <header class="page-header page-header-catalog">
       <div class="container page-header-container">
         <div class="page-header-left-container">
-           <a class="logo">
+          <a class="logo" href="./index.html">
             <img class="logo-image" src="./images/logo.svg" alt="Логотип сайта Глейси." width="137" height="56">
           </a>
           <button class="inherit-button catalog-button" type="button">Каталог</button>
@@ -50,13 +50,13 @@
               <a class="inherit-button breadcrumbs-link" href="#">Каталог</a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="inherit-button breadcrumbs-link breadcrumbs-current-link">Сливочное мороженое</a>
+              <a class="breadcrumbs-link breadcrumbs-current-link">Сливочное мороженое</a>
             </li>
           </ol>
           <h1 class="boldest-text catalog-title">Сливочное мороженое</h1>
         </header>
         <section class="catalog-flavors">
-          <h2 class="visully-hidden">Список вкусов вместе с формой сортировки.</h2>
+          <h2 class="visually-hidden">Список вкусов вместе с формой сортировки.</h2>
           <form class="sorting-form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="sorting-params">
               <legend class="sorting-params-legend">
@@ -120,7 +120,7 @@
             </fieldset>
             <button class="pink-button sorting-submit">Применить</button>
           </form>
-          <ul class="flavors-list">
+          <ul class="flavors-list flavors-list-catalog">
             <li class="flavors-item">
               <img class="flavors-image" src="./images/flavors/raspberry-flavor.jpg" alt="Клубничное мороженое." width="168" height="168">
               <h3 class="flavors-subtitle">Малинка</h3>
@@ -230,34 +230,36 @@
               </a>
             </li>
           </ul>
-          <ol class="flavors-pagination">
-            <li class="flavors-pagination-item">
-              <a class="inherit-button flavors-pagination-button" href="#">
-                <span class="visually-hidden">Перейти на предыдущую страницу вкусов.</span>
-              </a>
-            </li>
-            <li class="flavors-pagination-item">
-              <a class="light-button flavors-pagination-button flavors-pagination-button-current">1</a>
-            </li>
-            <li class="flavors-pagination-item">
-              <a class="inherit-button flavors-pagination-button" href="#">2</a>
-            </li>
-            <li class="flavors-pagination-item">
-              <a class="inherit-button flavors-pagination-button" href="#">3</a>
-            </li>
-            <li class="flavors-pagination-item">
-              <a class="inherit-button flavors-pagination-button" href="#">4</a>
-            </li>
-            <li class="flavors-pagination-item">
-              <a class="inherit-button flavors-pagination-button" href="#">5</a>
-            </li>
-            <li class="flavors-pagination-item">
-              <a class="inherit-button flavors-pagination-button" href="#">
-                <span class="visually-hidden">Перейти на следующую страницу вкусов.</span>
-              </a>
-            </li>
-          </ol>
-          <a class="light-button" href="#">Показать ещё</a>
+          <div class="flavors-pagination-container">
+            <a class="light-button flavors-pagination-link" href="#">Показать ещё</a>
+            <ol class="flavors-pagination">
+              <li class="flavors-pagination-item">
+                <a class="inherit-button flavors-pagination-button" href="#">
+                  <span class="visually-hidden">Перейти на предыдущую страницу вкусов.</span>
+                </a>
+              </li>
+              <li class="flavors-pagination-item">
+                <a class="light-button flavors-pagination-button flavors-pagination-button-current">1</a>
+              </li>
+              <li class="flavors-pagination-item">
+                <a class="inherit-button flavors-pagination-button" href="#">2</a>
+              </li>
+              <li class="flavors-pagination-item">
+                <a class="inherit-button flavors-pagination-button" href="#">3</a>
+              </li>
+              <li class="flavors-pagination-item">
+                <a class="inherit-button flavors-pagination-button" href="#">4</a>
+              </li>
+              <li class="flavors-pagination-item">
+                <a class="inherit-button flavors-pagination-button" href="#">5</a>
+              </li>
+              <li class="flavors-pagination-item">
+                <a class="inherit-button flavors-pagination-button" href="#">
+                  <span class="visually-hidden">Перейти на следующую страницу вкусов.</span>
+                </a>
+              </li>
+            </ol>
+          </div>
         </section>
       </div>
     </main>
@@ -282,7 +284,7 @@
             </a>
           </li>
         </ul>
-        <ul class="page-footer-list page-footer-for-suppliers">
+        <ul class="page-footer-for-suppliers">
           <li class="page-footer-item">
             <a class="inherit-button page-footer-link page-footer-link-for-suppliers" href="#">Для поставщиков</a>
           </li>

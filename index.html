@@ -10,7 +10,7 @@
     <header class="page-header">
       <div class="container page-header-container">
         <div class="page-header-left-container">
-           <a class="logo">
+          <a class="logo">
             <img class="logo-image" src="./images/logo.svg" alt="Логотип сайта Глейси." width="137" height="56">
           </a>
           <button class="inherit-button catalog-button" type="button">Каталог</button>
@@ -60,8 +60,7 @@
               <img src="./images/strawberry-ice-creame.png" alt="Клубничное мороженое" width="306" height="507">
             </li>
             <li class="introduction-item">
-              <!-- Уберу hidden, когда реализую visually-hidden -->
-              <div class="visually-hidden introduction-desc" hidden>
+              <div class="visually-hidden introduction-desc">
                 <p class="boldest-text introduction-short">
                   Сливочное мороженое
                   со вкусом банана
@@ -76,8 +75,7 @@
               <img class="introduction-small-image" src="./images/creamy-ice-cream.png" alt="Сливочное мороженое" width="306" height="507">
             </li>
             <li class="introduction-item">
-              <!-- Уберу hidden, когда реализую visually-hidden -->
-              <div class="visually-hidden introduction-desc" hidden>
+              <div class="visually-hidden introduction-desc">
                 <p class="boldest-text introduction-short">
                   Карамельный пломбир
                   с маршмеллоу
@@ -100,13 +98,19 @@
           </button>
           <ol class="introduction-pagination">
             <li class="introduction-pagination-item">
-              <button class="visually-hidden" type="button">Перейти на первую картинку.</button>
+              <button class="introduction-pagination-button" type="button">
+                <span class="visually-hidden">Перейти на первую картинку.</span>
+              </button>
             </li>
             <li class="introduction-pagination-item">
-              <button class="visually-hidden" type="button">Перейти на вторую картинку.</button>
+              <button class="introduction-pagination-button" type="button">
+                <span class="visually-hidden">Перейти на вторую картинку.</span>
+              </button>
             </li>
             <li class="introduction-pagination-item">
-              <button class="visually-hidden" type="button">Перейти на третью картинку.</button>
+              <button class="introduction-pagination-button" type="button">
+                <span class="visually-hidden">Перейти на третью картинку.</span>
+              </button>
             </li>
           </ol>
           <ul class="social-media introduction-social-media-list">
@@ -131,21 +135,25 @@
         <section class="gifts">
           <h2 class="boldest-text gifts-title">Заказывайте мороженое и получайте подарки!</h2>
           <div class="gifts-container">
-            <div class="gift-card">
-              <h3 class="gifts-subtitle">Малинка даром!</h3>
-              <p class="gift-desc">
-                При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.
-              </p>
-              <a class="light-button gift-link" href="#">Хочу подарок</a>
-              <img class="gift-raspberry-image" src="./images/raspberry.png" alt="Малина." width="219" height="268">
+            <div class="gifts-card">
+              <div class="gifts-card-container">
+                <h3 class="gifts-subtitle">Малинка даром!</h3>
+                <p class="gifts-desc">
+                  При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.
+                </p>
+                <a class="light-button gifts-link" href="#">Хочу подарок</a>
+              </div>
+              <img class="gifts-raspberry-image" src="./images/raspberry.png" alt="Малина." width="219" height="268">
             </div>
-            <div class="gift-card">
-              <h3 class="gifts-subtitle">Маршмеллоу даром!</h3>
-              <p class="gift-desc">
-                При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
-              </p>
-              <a class="light-button gift-link" href="#">Хочу подарок</a>
-              <img class="gift-marshmallow-image" src="./images/marshmallow.png" alt="Зефир." width="219" height="268">
+            <div class="gifts-card">
+              <div class="gifts-card-container">
+                <h3 class="gifts-subtitle">Маршмеллоу даром!</h3>
+                <p class="gifts-desc">
+                  При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
+                </p>
+                <a class="light-button gifts-link" href="#">Хочу подарок</a>
+              </div>
+              <img class="gifts-marshmallow-image" src="./images/marshmallow.png" alt="Зефир." width="219" height="268">
             </div>
           </div>
         </section>
@@ -194,29 +202,31 @@
         </section>
         <!-- about-us -->
         <section class="about-us">
-          <h2 class="boldest-text about-us-title">
-            Магазин Глейси – это онлайн и офлайн-магазин по продаже
-            мороженого собственного производства на развес
-          </h2>
-          <ul class="about-us-list">
-            <li class="about-us-item about-us-item-ice-cream">
-              Всё наше мороженое изготавливается на собственном производстве
-              с использованием современного оборудования и проверенных временем технологий.
-            </li>
-            <li class="about-us-item about-us-item-ingredients">
-              Для приготовления мороженого используются сливки и молоко высочайшего качества.
-              Все ингредиенты и добавки произведены из натурального сырья.
-            </li>
-            <li class="about-us-item about-us-item-natural-products">
-              Закупка ингредиентов производится только
-              у проверенных фермерских хозяйств, с которыми
-              нас связывает долговременное сотрудничество.
-            </li>
-            <li class="about-us-item about-us-item-temperature">
-              Доставка нашего мороженого осуществляется в специальном термопаке,
-              который не даёт мороженому растаять и позволяет сохранить превосходный вкус.
-            </li>
-          </ul>
+          <div class="about-us-container">
+            <h2 class="boldest-text about-us-title">
+              Магазин Глейси – это онлайн и офлайн-магазин по продаже
+              мороженого собственного производства на развес
+            </h2>
+            <ul class="about-us-list">
+              <li class="about-us-item about-us-item-ice-cream">
+                Всё наше мороженое изготавливается на собственном производстве
+                с использованием современного оборудования и проверенных временем технологий.
+              </li>
+              <li class="about-us-item about-us-item-natural-products">
+                Закупка ингредиентов производится только
+                у проверенных фермерских хозяйств, с которыми
+                нас связывает долговременное сотрудничество.
+              </li>
+              <li class="about-us-item about-us-item-ingredients">
+                Для приготовления мороженого используются сливки и молоко высочайшего качества.
+                Все ингредиенты и добавки произведены из натурального сырья.
+              </li>
+              <li class="about-us-item about-us-item-temperature">
+                Доставка нашего мороженого осуществляется в специальном термопаке,
+                который не даёт мороженому растаять и позволяет сохранить превосходный вкус.
+              </li>
+            </ul>
+          </div>
         </section>
         <!-- aside -->
         <aside class="aside-index">
@@ -230,17 +240,19 @@
             </a>
             <!-- mailing-list -->
             <article class="mailing-list">
-              <h2 class="visually-hidden">Подписка на рассылку писем.</h2>
-              <p class="mailing-list-text">
-                Подпишитесь на нашу сладкую рассылку и будьте всегда
-                в курсе всего самого вкусного, что у нас происходит.
-                Обещаем не спамить и не слать всякой ненужной ерунды.
-                Честно =)
-              </p>
-              <form class="mailing-list-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="text-input mailing-list-form-input-mail" type="email" name="email" placeholder="email@example.com" required>
-                <button class="red-button mailing-list-form-submit" type="submit">Отправить</button>
-              </form>
+              <div class="mailing-list-container">
+                <h2 class="visually-hidden">Подписка на рассылку писем.</h2>
+                <p class="mailing-list-text">
+                  Подпишитесь на нашу сладкую рассылку и будьте всегда
+                  в курсе всего самого вкусного, что у нас происходит.
+                  Обещаем не спамить и не слать   всякой ненужной ерунды.
+                  Честно =)
+                </p>
+                <form class="mailing-list-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <input class="text-input mailing-list-form-input-mail" type="email" name="email" placeholder="email@example.com" required>
+                  <button class="red-button mailing-list-form-submit" type="submit">Отправить</button>
+                </form>
+              </div>
             </article>
           </div>
         </aside>
@@ -315,7 +327,7 @@
             </a>
           </li>
         </ul>
-        <ul class="page-footer-list page-footer-for-suppliers">
+        <ul class="page-footer-for-suppliers">
           <li class="page-footer-item">
             <a class="inherit-button page-footer-link page-footer-link-for-suppliers" href="#">Для поставщиков</a>
           </li>
