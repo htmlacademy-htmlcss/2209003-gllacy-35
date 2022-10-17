@@ -735,6 +735,7 @@ body {
 /* catalog => main-catalog-header */
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
 
   padding: 0;
   margin: 0;
