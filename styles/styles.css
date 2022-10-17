@@ -563,7 +563,7 @@ body {
   background-color: var(--white);
   background-image: url("../images/background/delivery-bg.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 
   margin-bottom: 80px;
 }
@@ -589,11 +589,11 @@ body {
   margin-bottom: 163px;
 }
 
-/* Реализую через grid */
 .delivery-right-container {
   flex-basis: 500px;
   padding-right: 65px;
   padding-top: 64px;
+  margin-bottom: 64px;
 }
 
 .delivery-text,
@@ -602,12 +602,57 @@ body {
 }
 
 .delivery-form {
+  display: flex;
+  flex-direction: column;
+
   background-color: var(--white);
 }
 
-.delivery-form-label {
+.delivery-label {
   font-weight: 700;
   line-height: 20px;
+}
+
+.delivery-form {
+  padding: 40px;
+  padding-bottom: 0;
+}
+
+.delivery-form-text {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.delivery-form-container {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+
+  margin-bottom: 32px;
+}
+
+.delivery-input {
+  box-sizing: border-box;
+
+  width: 100%;
+  padding: 14px 16px;
+}
+
+.delivery-label {
+  display: inline-block;
+
+  margin-bottom: 8px;
+}
+
+.delivery-address {
+  grid-column: 1 / -1;
+}
+
+.delivery-submit {
+  align-self: center;
+
+  padding: 12px 32px;
+  margin-bottom: 42px;
 }
 
 /* index => contacts */
