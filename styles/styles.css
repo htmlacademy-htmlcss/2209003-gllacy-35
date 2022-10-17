@@ -745,6 +745,11 @@ body {
 }
 
 .page-footer-for-suppliers {
+  display: grid;
+  grid-template-columns: 126px 182px;
+  gap: 8px 24px;
+  align-content: start;
+
   margin: 0;
   padding: 0;
   list-style-type: none;
