@@ -166,37 +166,45 @@
               <img class="flavors-image" src="./images/flavors/raspberry-flavor.jpg" alt="Клубничное мороженое." width="168" height="168">
               <h3 class="flavors-subtitle">Малинка</h3>
               <p class="flavors-desc">Сливочное мороженое с малиновым джемом</p>
-              <b class="flavors-price">310 ₽/кг</b>
-              <a class="red-button flavors-link" href="#">
-                <span class="visually-hidden">Купить.</span>
-              </a>
+              <div class="flavors-bottom-container">
+                <b class="flavors-price">310 ₽/кг</b>
+                <a class="red-button flavors-link" href="#">
+                  <span class="visually-hidden">Купить.</span>
+                </a>
+              </div>
             </li>
             <li class="flavors-item">
               <img class="flavors-image" src="./images/flavors/pistachio-flavor.jpg" alt="Фисташковое мороженое." width="168" height="168">
               <h3 class="flavors-subtitle">Фисташка</h3>
               <p class="flavors-desc">Фисташковый пломбир с кусочками шоколада</p>
-              <b class="flavors-price">340 ₽/кг</b>
-              <a class="red-button flavors-link" href="#">
-                <span class="visually-hidden">Купить.</span>
-              </a>
+              <div class="flavors-bottom-container">
+                <b class="flavors-price">340 ₽/кг</b>
+                <a class="red-button flavors-link" href="#">
+                  <span class="visually-hidden">Купить.</span>
+                </a>
+              </div>
             </li>
             <li class="flavors-item">
               <img class="flavors-image" src="./images/flavors/bilberry-flavor.jpg" alt="Черничное мороженое." width="168" height="168">
               <h3 class="flavors-subtitle">Черника</h3>
               <p class="flavors-desc">Крем-брюле с черничным джемом</p>
-              <b class="flavors-price">330 ₽/кг</b>
-              <a class="red-button flavors-link" href="#">
-                <span class="visually-hidden">Купить.</span>
-              </a>
+              <div class="flavors-bottom-container">
+                <b class="flavors-price">330 ₽/кг</b>
+                <a class="red-button flavors-link" href="#">
+                  <span class="visually-hidden">Купить.</span>
+                </a>
+              </div>
             </li>
             <li class="flavors-item">
               <img class="flavors-image" src="./images/flavors/buble-gam-flavor.jpg" alt="Мороженое со вкусом бабл-гам." width="168" height="168">
               <h3 class="flavors-subtitle">Бабл-гам</h3>
               <p class="flavors-desc">Ванильный пломбир со сладкой посыпкой</p>
-              <b class="flavors-price">320 ₽/кг</b>
-              <a class="red-button flavors-link" href="#">
-                <span class="visually-hidden">Купить.</span>
-              </a>
+              <div class="flavors-bottom-container">
+                <b class="flavors-price">320 ₽/кг</b>
+                <a class="red-button flavors-link" href="#">
+                  <span class="visually-hidden">Купить.</span>
+                </a>
+              </div>
             </li>
           </ul>
         </section>
@@ -272,19 +280,21 @@
                 <p class="delivery-form-text">
                   Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
                 </p>
-                <div class="delivery-date">
-                  <label class="delivery-form-label delivery-date-label" for="delivery-date">Дата</label>
-                  <input class="text-input delivery-input" id="delivery-date" type="text" name="date" placeholder="01.04.2020" required>
+                <div class="delivery-form-container">
+                  <div class="delivery-date">
+                    <label class="delivery-label delivery-date-label" for="delivery-date">Дата</label>
+                    <input class="text-input delivery-input" id="delivery-date" type="text" name="date" placeholder="01.04.2020" required>
+                  </div>
+                  <div class="delivery-phone">
+                    <label class="delivery-label delivery-phone-label" for="delivery-phone">Телефон</label>
+                    <input class="text-input delivery-input" id="delivery-phone" type="tel" name="phone" placeholder="+7 800 999-00-00" required>
+                  </div>
+                  <div class="delivery-address">
+                    <label class="delivery-label delivery-address-label" for="delivery-address">Адрес</label>
+                    <input class="text-input delivery-input" id="delivery-address" type="text" name="address" placeholder="ул. Большая Конюшенная, 19/8" required>
+                  </div>
                 </div>
-                <div class="delivery-phone">
-                  <label class="delivery-form-label delivery-phone-label" for="delivery-phone">Телефон</label>
-                  <input class="text-input delivery-input" id="delivery-phone" type="tel" name="phone" placeholder="+7 800 999-00-00" required>
-                </div>
-                <div class="delivery-address">
-                  <label class="delivery-form-label delivery-address-label" for="delivery-address">Адрес</label>
-                  <input class="text-input delivery-input" id="delivery-address" type="text" name="address" placeholder="ул. Большая Конюшенная, 19/8" required>
-                </div>
-                <button class="red-button delivery-form-submit" type="submit">Отправить</button>
+                <button class="red-button delivery-submit" type="submit">Отправить</button>
               </form>
             </div>
           </div>
@@ -338,7 +348,7 @@
             <a class="inherit-button page-footer-link" href="#">О производстве</a>
           </li>
           <li class="page-footer-item">
-            <a class="inherit-button page-footer-link" href="#">О производстве</a>
+            <a class="inherit-button page-footer-link" href="#">Экологические стандарты</a>
           </li>
         </ul>
         <div class="page-footer-copyright">
