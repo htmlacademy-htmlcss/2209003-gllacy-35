@@ -792,6 +792,7 @@ body {
 
   padding-left: 32px;
   padding-top: 33px;
+  border-radius: 16px;
 }
 
 .new-blog-text {
@@ -821,6 +822,7 @@ body {
 
   flex-basis: 570px;
   padding: 6px;
+  border-radius: 16px;
 }
 
 .mailing-list-container {
@@ -831,6 +833,7 @@ body {
 
   padding: 26px;
   padding-bottom: 0;
+  border-radius: 16px;
 }
 
 .mailing-list-text {
@@ -857,6 +860,7 @@ body {
   display: inline-block;
 
   padding: 12px 32px;
+  border-radius: 26px;
 }
 
 /* index => delivery */
