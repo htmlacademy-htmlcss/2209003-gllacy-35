@@ -195,13 +195,14 @@ body {
 }
 
 .social-media-link {
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
 
   border-radius: 50%;
-  border: 2px solid var(--white-opacity-3);
-  background-clip: padding-box;
+  box-shadow: 0 0 0 2px var(--white-opacity-3);
   color: var(--white);
   outline: none;
 
@@ -209,17 +210,30 @@ body {
   height: 24px;
 }
 
-.social-media-link:hover {
+.social-media-link::before {
+  position: absolute;
+  z-index: -1;
+
   background-color: var(--black);
+  opacity: 0;
+
+  width: 15px;
+  height: 15px;
+  content: "";
+}
+
+.social-media-link:hover::before,
+.social-media-link:focus::before,
+.social-media-link:active::before {
+  opacity: 1;
 }
 
 .social-media-link:focus {
-  background-color: var(--black);
-  border: 2px solid var(--black);
+  box-shadow: 0 0 0 2px var(--black);
 }
 
 .social-media-link:active {
-  border: 2px solid var(--white);
+  box-shadow: 0 0 0 2px var(--white-opacity-3);
   opacity: 0.5;
 }
 
