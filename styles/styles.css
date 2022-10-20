@@ -695,6 +695,7 @@ body {
   color: var(--white);
   background-color: var(--red);
   outline: none;
+  box-shadow: 0 0 0 2px var(--red);
 
   width: 32px;
   height: 32px;
@@ -702,13 +703,13 @@ body {
 }
 
 .flavors-link:focus {
-  box-shadow: inset 0 0 0 2px var(--black);
+  box-shadow: 0 0 0 2px var(--black);
 }
 
 .flavors-link:hover {
   background-color: var(--white);
   color: var(--black);
-  box-shadow: inset 0 0 0 2px var(--red);
+  box-shadow: 0 0 0 2px var(--red);
 }
 
 .flavors-link:active {
@@ -905,7 +906,7 @@ body {
 }
 
 .delivery-left-container {
-  flex-basis: 370px;
+  flex-basis: 372px;
   padding-left: 100px;
   padding-top: 167px;
 }
