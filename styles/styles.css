@@ -622,7 +622,8 @@ body {
   background-color: var(--white);
 
   padding: 135px 40px;
-  padding-bottom: 0;
+  padding-bottom: 24px;
+  border-radius: 8px;
 }
 
 .flavors-image {
@@ -654,8 +655,6 @@ body {
 .flavors-bottom-container {
   display: flex;
   justify-content: space-between;
-
-  margin-bottom: 24px;
 }
 
 .flavors-price {
@@ -665,8 +664,13 @@ body {
 }
 
 .flavors-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 32px;
   height: 32px;
+  border-radius: 50%;
 }
 
 /* index => about-us */
