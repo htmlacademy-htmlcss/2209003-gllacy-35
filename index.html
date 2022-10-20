@@ -47,12 +47,12 @@
             <li class="introduction-item introduction-current-item">
               <div class="introduction-desc">
                 <p class="boldest-text introduction-short-desc">
-                  Нежный пломбира
+                  Нежный пломбира<br>
                   с клубничным джемом
                 </p>
                 <p class="introduction-big-desc">
-                  Натуральное мороженое из свежих сливок
-                  и молока с вкуснейшим клубничным джемом –
+                  Натуральное мороженое из свежих сливок<br>
+                  и молока с вкуснейшим клубничным джемом –<br>
                   это идеальный десерт для всей семьи.
                 </p>
                 <a class="light-button introduction-button" href="#">Заказать</a>
@@ -62,43 +62,49 @@
             <li class="introduction-item">
               <div class="visually-hidden introduction-desc">
                 <p class="boldest-text introduction-short">
-                  Сливочное мороженое
+                  Сливочное мороженое<br>
                   со вкусом банана
                 </p>
                 <p class="introduction-big-desc">
-                  Сливочное мороженое с ярким банановым
-                  вкусом подарит вам свежесть и наслаждение
+                  Сливочное мороженое с ярким банановым<br>
+                  вкусом подарит вам свежесть и наслаждение<br>
                   даже в самый жаркий летний день.
                 </p>
                 <a class="light-button introduction-button" href="#">Заказать</a>
               </div>
-              <img class="introduction-small-image" src="./images/creamy-ice-cream.png" alt="Сливочное мороженое" width="306" height="507">
+              <div class="introduction-small-image-container">
+                <img class="introduction-small-image" src="./images/creamy-ice-cream.png" alt="Сливочное мороженое" width="306" height="507">
+              </div>
             </li>
             <li class="introduction-item">
               <div class="visually-hidden introduction-desc">
                 <p class="boldest-text introduction-short">
-                  Карамельный пломбир
+                  Карамельный пломбир<br>
                   с маршмеллоу
                 </p>
                 <p class="introduction-big-desc">
-                  Необычный сладкий десерт с карамельным
-                  топпингом и кусочками зефира завоюет
+                  Необычный сладкий десерт с карамельным<br>
+                  топпингом и кусочками зефира завоюет<br>
                   сердца сладкоежек всех возрастов.
                 </p>
                 <a class="light-button introduction-button" href="#">Заказать</a>
               </div>
-              <img class="introduction-small-image" src="./images/marshmallow-ice-cream.png" alt="Карамельное мороженое" width="306" height="507">
+              <div class="introduction-small-image-container">
+                <img class="introduction-small-image" src="./images/marshmallow-ice-cream.png" alt="Карамельное мороженое" width="306" height="507">
+              </div>
             </li>
           </ul>
-          <button class="introduction-previous-image" type="button">
+          <button class="introduction-image-button introduction-previous-image" type="button">
+            <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z" fill="currentColor"/></svg>
             <span class="visually-hidden">Перейти на прошлую картинку.</span>
           </button>
-          <button class="introduction-next-image" type="button">
+          <button class="introduction-image-button introduction-next-image" type="button">
+            <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z" fill="currentColor"/></svg>
             <span class="visually-hidden">Перейти на следующую картинку.</span>
           </button>
           <ol class="introduction-pagination">
             <li class="introduction-pagination-item">
-              <button class="introduction-pagination-button" type="button">
+              <button class="introduction-pagination-button introduction-pagination-button-current" type="button">
                 <span class="visually-hidden">Перейти на первую картинку.</span>
               </button>
             </li>
@@ -115,17 +121,20 @@
           </ol>
           <ul class="social-media introduction-social-media-list">
             <li class="social-media-item introduction-social-media-item">
-              <a class="light-button social-media-link" href="https://t.me/htmlacademy">
+              <a class="social-media-link" href="https://t.me/htmlacademy">
+                <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C24 18.627 18.627 24 12 24C5.373 24 0 18.627 0 12C0 5.373 5.373 0 12 0C18.627 0 24 5.373 24 12ZM12.43 8.859C11.263 9.344 8.93 10.349 5.432 11.873C4.864 12.099 4.566 12.32 4.539 12.536C4.493 12.902 4.951 13.046 5.573 13.241C5.658 13.268 5.746 13.295 5.836 13.325C6.449 13.524 7.273 13.757 7.701 13.766C8.09 13.774 8.524 13.614 9.003 13.286C12.271 11.079 13.958 9.964 14.064 9.94C14.139 9.923 14.243 9.901 14.313 9.964C14.383 10.026 14.376 10.144 14.369 10.176C14.323 10.369 12.529 12.038 11.599 12.902C11.309 13.171 11.104 13.362 11.062 13.406C10.968 13.503 10.872 13.596 10.78 13.685C10.21 14.233 9.784 14.645 10.804 15.317C11.294 15.64 11.686 15.907 12.077 16.173C12.504 16.464 12.93 16.754 13.482 17.116C13.622 17.208 13.756 17.303 13.887 17.396C14.384 17.751 14.831 18.069 15.383 18.019C15.703 17.989 16.035 17.688 16.203 16.789C16.6 14.663 17.382 10.059 17.563 8.161C17.574 8.00341 17.5673 7.84509 17.543 7.689C17.5284 7.56293 17.4671 7.44693 17.371 7.364C17.228 7.247 17.006 7.222 16.906 7.224C16.455 7.232 15.763 7.473 12.43 8.859V8.859Z" fill="#FCFCFC"/></svg>
                 <span class="visually-hidden">Телеграм.</span>
               </a>
             </li>
             <li class="social-media-item introduction-social-media-item">
-              <a class="light-button social-media-link" href="https://vk.com/htmlacademy">
+              <a class="social-media-link" href="https://vk.com/htmlacademy">
+                <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.41 2.97h-.72s-1.58.09-2.98-1.18C7.37 12.4 6.03 9.65 6.03 9.65s-.07-.18 0-.27c.1-.1.36-.1.36-.1l1.72-.01s.16.02.27.1c.1.05.15.17.15.17s.28.61.65 1.17c.71 1.08 1.05 1.32 1.29 1.2.35-.16.25-1.53.25-1.53s0-.5-.18-.71c-.14-.17-.41-.22-.53-.24-.1-.01.06-.2.26-.3.31-.13.86-.13 1.5-.13.5 0 .65.03.84.07.46.1.44.41.41 1.08l-.02.7v.18c-.01.34-.02.73.23.88.13.07.45 0 1.26-1.19.38-.56.66-1.23.66-1.23s.07-.12.16-.17c.1-.05.24-.04.24-.04h1.8s.54-.06.63.15c.1.23-.2.75-.94 1.61-.7.82-1.03 1.12-1 1.38.01.2.23.38.66.72.89.73 1.13 1.1 1.18 1.2l.01.01c.4.58-.44.62-.44.62l-1.6.02s-.34.06-.8-.2a3.94 3.94 0 0 1-.69-.6c-.33-.34-.65-.66-.91-.58-.45.12-.44.96-.44.96s0 .18-.1.28c-.1.1-.32.12-.32.12Z" fill="#FCFCFC"/></svg>
                 <span class="visually-hidden">ВК.</span>
               </a>
             </li>
             <li class="social-media-item introduction-social-media-item">
-              <a class="light-button social-media-link" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social-media-link" href="https://www.youtube.com/user/htmlacademyru">
+                <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m14 11.8-2.8-1.32c-.25-.11-.45.01-.45.29v2.46c0 .28.2.4.45.29L14 12.2c.25-.12.25-.3 0-.42ZM12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 16.88c-6.14 0-6.25-.56-6.25-4.88s.1-4.88 6.25-4.88c6.14 0 6.25.56 6.25 4.88s-.1 4.88-6.25 4.88Z" fill="#FCFCFC"/></svg>
                 <span class="visually-hidden">Ютюб.</span>
               </a>
             </li>

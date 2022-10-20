@@ -3,11 +3,14 @@
   /* colors */
   --pink: #feafc3;
   --black: #2d3440;
-  --light-pink-opacity-3: rgba(252, 252, 252, 0.3);
-  --light-pink-opacity-5: rgba(252, 252, 252, 0.5);
+  --white-opacity-3: rgba(252, 252, 252, 0.3);
+  --white-opacity-4: rgba(252, 252, 252, 0.4);
+  --white-opacity-5: rgba(252, 252, 252, 0.5);
   --white: #fcfcfc;
   --dark-pink: #ff7799;
-  --gray: #565c66;
+  --pink-for-ice-creams: #ffcbd8;
+  --dark-gray: #565c66;
+  --gray: #e7e7e7;
   --red: #ff2f64;
   --light-gray: #b9b9b9;
 }
@@ -80,9 +83,12 @@ body {
 .red-button,
 .inherit-button {
   display: inline-block;
+  box-sizing: border-box;
   border: none;
   cursor: pointer;
   text-decoration: none;
+  background-clip: padding-box;
+  outline: none;
 }
 
 .pink-button {
@@ -90,7 +96,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  background-color: var(--light-pink-opacity-3);
+  background-color: var(--white-opacity-3);
 }
 
 .light-button {
@@ -100,6 +106,32 @@ body {
   font-size: 16px;
   text-align: center;
   background-color: var(--white);
+  border: 4px solid var(--white-opacity-4);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.light-button:disabled {
+  background-color: var(--gray);
+  color: var(--light-gray);
+}
+
+.light-button:hover:not(:disabled) {
+  background-color: var(--white-opacity-4);
+
+  border: 4px solid var(--white);
+  box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
+}
+
+.light-button:focus {
+  background-color: var(--white-opacity-5);
+  border: 4px solid rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 0 2px var(--black);
+}
+
+.light-button:active:not(:disabled) {
+  background-color: var(--white);
+  box-shadow: inset 0 0 0 2px var(--black);
+  border: 4px solid rgba(0, 0, 0, 0);
 }
 
 .red-button {
@@ -137,11 +169,19 @@ body {
 }
 
 .social-media-item + .social-media-item {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .social-media-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  border-width: 2px;
+  background-color: var(--white-opacity-3);
+  border: 2px solid var(--white-opacity-3);
+  background-clip: padding-box;
 
   width: 24px;
   height: 24px;
@@ -181,11 +221,11 @@ body {
 }
 
 .header-button:hover {
-  background-color: var(--light-pink-opacity-5);
+  background-color: var(--white-opacity-5);
 }
 
 .header-button:focus {
-  background-color: var(--light-pink-opacity-5);
+  background-color: var(--white-opacity-5);
   box-shadow: inset 0 0 0 2px var(--black);
   outline: none;
 }
@@ -290,6 +330,8 @@ body {
 
 /* index => introduction */
 .introduction {
+  position: relative;
+
   margin-bottom: 80px;
 }
 
@@ -304,8 +346,24 @@ body {
 }
 
 .introduction-current-item {
+  position: relative;
+
   display: flex;
   flex-basis: 846px;
+}
+
+.introduction-current-item::after {
+  position: absolute;
+  top: 121px;
+  right: 0;
+  z-index: -1;
+
+  background-color: var(--pink-for-ice-creams);
+  border-radius: 50%;
+
+  width: 312px;
+  height: 312px;
+  content: "";
 }
 
 .introduction-current-item .introduction-desc {
@@ -314,14 +372,14 @@ body {
   padding-left: 70px;
 }
 
-.introduction-short-desc {
+.introduction-current-item .introduction-short-desc {
   font-size: 36px;
 
   margin: 0;
   margin-bottom: 24px;
 }
 
-.introduction-big-desc {
+.introduction-current-item .introduction-big-desc {
   font-size: 18px;
   line-height: 24px;
 
@@ -329,11 +387,36 @@ body {
   margin-bottom: 48px;
 }
 
-.introduction-button {
+.introduction-current-item .introduction-button {
   display: inline-block;
 
   padding: 12px 32px;
   margin-bottom: 138px;
+  border-radius: 26px;
+}
+
+.introduction-button {
+  display: none;
+}
+
+.introduction-small-image-container {
+  position: relative;
+
+  opacity: 0.4;
+}
+
+.introduction-small-image-container::before {
+  position: absolute;
+  top: 25px;
+  right: -17px;
+  z-index: -1;
+
+  background-color: var(--pink-for-ice-creams);
+  border-radius: 50%;
+
+  width: 100px;
+  height: 100px;
+  content: "";
 }
 
 .introduction-small-image {
@@ -341,7 +424,58 @@ body {
   height: 150px;
 }
 
+.introduction-image-button  {
+  position: absolute;
+  top: 259px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid var(--white);
+  background-color: var(--white-opacity-3);
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  color: var(--white);
+
+  width: 38px;
+  height: 38px;
+}
+
+.introduction-image-button:disabled {
+  opacity: 0.4;
+}
+
+.introduction-image-button:hover:not(:disabled) {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.introduction-image-button:focus {
+  background-color: var(--white-opacity-5);
+  color: var(--black);
+  border: 2px solid var(--black);
+}
+
+.introduction-image-button:active:not(:disabled) {
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.introduction-previous-image {
+  left: 515px;
+}
+
+.introduction-next-image {
+  right: 305px;
+}
+
 .introduction-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
   display: flex;
 
   margin: 0;
@@ -356,8 +490,23 @@ body {
 .introduction-pagination-button {
   display: inline-block;
 
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: var(--white-opacity-4);
+
   width: 12px;
   height: 12px;
+}
+
+.introduction-pagination-button-current {
+  background-color: var(--white);
+}
+
+.introduction-social-media-list {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* index => gifts */
@@ -466,7 +615,7 @@ body {
 }
 
 .flavors-desc {
-  color: var(--gray);
+  color: var(--dark-gray);
   text-align: center;
 
   margin: 0;
@@ -528,7 +677,7 @@ body {
 }
 
 .about-us-item {
-  color: var(--gray);
+  color: var(--dark-gray);
 
   padding-left: 64px;
 }
@@ -566,7 +715,7 @@ body {
 .new-blog-text {
   order: -1;
 
-  color: var(--gray);
+  color: var(--dark-gray);
   line-height: 20px;
 
   margin: 0;
@@ -603,7 +752,7 @@ body {
 }
 
 .mailing-list-text {
-  color: var(--gray);
+  color: var(--dark-gray);
 
   margin: 0;
   margin-bottom: 42px;
@@ -668,7 +817,7 @@ body {
 
 .delivery-text,
 .delivery-form-text {
-  color: var(--gray);
+  color: var(--dark-gray);
 }
 
 .delivery-form {
@@ -756,7 +905,7 @@ body {
 }
 
 .contacts-text {
-  color: var(--gray);
+  color: var(--dark-gray);
 }
 
 .contacts-main-text {
@@ -884,7 +1033,7 @@ body {
 
 /* catalog => flavors */
 .catalog-flavors {
-  border-bottom: 1px solid var(--light-pink-opacity-3);
+  border-bottom: 1px solid var(--white-opacity-3);
 }
 
 /* catalog => sorting-form */
