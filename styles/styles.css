@@ -1158,8 +1158,25 @@ body {
   line-height: 20px;
 }
 
+.breadcrumbs-item {
+  position: relative;
+}
+
 .breadcrumbs-item + .breadcrumbs-item {
   margin-left: 28px;
+}
+
+.breadcrumbs-item + .breadcrumbs-item::before {
+  position: absolute;
+  left: -20px;
+  top: 5.5px;
+
+  background-image: url("../images/icons/arrows/chevrons-right.svg");
+  background-repeat: no-repeat;
+
+  width: 12px;
+  height: 12px;
+  content: "";
 }
 
 .breadcrumbs-current-link {
