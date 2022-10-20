@@ -900,6 +900,7 @@ body {
   background-size: cover;
 
   margin-bottom: 80px;
+  border-radius: 16px;
 }
 
 .delivery-container {
@@ -940,6 +941,8 @@ body {
   flex-direction: column;
 
   background-color: var(--white);
+
+  border-radius: 8px;
 }
 
 .delivery-label {
@@ -987,6 +990,7 @@ body {
 
   padding: 12px 32px;
   margin-bottom: 42px;
+  border-radius: 26px;
 }
 
 /* index => contacts */
