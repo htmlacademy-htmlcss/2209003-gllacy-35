@@ -494,9 +494,22 @@ body {
   border: none;
   cursor: pointer;
   background-color: var(--white-opacity-4);
+  outline: none;
 
   width: 12px;
   height: 12px;
+}
+
+.introduction-pagination-button:hover:not(.introduction-pagination-button-current) {
+  box-shadow: inset 0 0 0 1px var(--white);
+}
+
+.introduction-pagination-button:focus {
+  box-shadow: inset 0 0 0 1px var(--black);
+}
+
+.introduction-pagination-button:active {
+  background-color: var(--white);
 }
 
 .introduction-pagination-button-current {
