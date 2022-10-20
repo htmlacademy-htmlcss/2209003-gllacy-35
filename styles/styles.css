@@ -1098,7 +1098,22 @@ body {
 }
 
 .page-footer-link-for-suppliers {
+  position: relative;
+
   font-weight: 700;
+}
+
+.page-footer-link-for-suppliers::before {
+  position: absolute;
+  top: 2px;
+  left: -20px;
+
+  background-image: url("../images/icons/heart.svg");
+  background-repeat: no-repeat;
+
+  width: 16px;
+  height: 16px;
+  content: "";
 }
 
 .page-footer-copyright {
