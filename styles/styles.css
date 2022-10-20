@@ -668,9 +668,27 @@ body {
   justify-content: center;
   align-items: center;
 
+  color: var(--white);
+  background-color: var(--red);
+  outline: none;
+
   width: 32px;
   height: 32px;
   border-radius: 50%;
+}
+
+.flavors-link:focus {
+  box-shadow: inset 0 0 0 2px var(--black);
+}
+
+.flavors-link:hover {
+  background-color: var(--white);
+  color: var(--black);
+  box-shadow: inset 0 0 0 2px var(--red);
+}
+
+.flavors-link:active {
+  background-color: #ffcbd8;
 }
 
 /* index => about-us */
