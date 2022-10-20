@@ -1000,10 +1000,11 @@ body {
   background-color: var(--white);
   background-image: url("../images/background/contacts-bg.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 
   padding-top: 64px;
   padding-left: 64px;
+  border-radius: 16px;
 }
 
 .contacts-container {
@@ -1017,6 +1018,7 @@ body {
   margin-bottom: 64px;
 
   background-color: var(--white);
+  border-radius: 8px;
 }
 
 .contacts-wrapper {
@@ -1053,9 +1055,16 @@ body {
   margin-bottom: 32px;
 }
 
+.contacts-phone .contacts-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .contacts-button {
   padding: 12px 32px;
   margin-bottom: 40px;
+  border-radius: 26px;
 }
 
 /* footer */
