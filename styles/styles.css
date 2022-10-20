@@ -469,12 +469,13 @@ body {
   justify-content: center;
   align-items: center;
 
-  border: 2px solid var(--white);
+  box-shadow: 0 0 0 2px var(--white);
   background-color: var(--white-opacity-3);
   border-radius: 50%;
   cursor: pointer;
   outline: none;
   color: var(--white);
+  border: none;
 
   width: 38px;
   height: 38px;
@@ -492,11 +493,11 @@ body {
 .introduction-image-button:focus {
   background-color: var(--white-opacity-5);
   color: var(--black);
-  border: 2px solid var(--black);
+  box-shadow: 0 0 0 2px var(--black);
 }
 
 .introduction-image-button:active:not(:disabled) {
-  border: 2px solid transparent;
+  box-shadow: 0 0 0 2px var(--white);
 }
 
 .introduction-previous-image {
@@ -537,15 +538,16 @@ body {
 }
 
 .introduction-pagination-button:hover:not(.introduction-pagination-button-current) {
-  box-shadow: inset 0 0 0 1px var(--white);
+  box-shadow: 0 0 0 1px var(--white);
 }
 
 .introduction-pagination-button:focus {
-  box-shadow: inset 0 0 0 1px var(--black);
+  box-shadow: 0 0 0 1px var(--black);
 }
 
 .introduction-pagination-button:active {
   background-color: var(--white);
+  box-shadow: 0 0 0 1px var(--white);
 }
 
 .introduction-pagination-button-current {
