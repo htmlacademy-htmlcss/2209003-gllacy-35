@@ -776,12 +776,16 @@ body {
 }
 
 .about-us-item::before {
+  box-sizing: border-box;
   position: absolute;
   top: 0;
   left: 0;
 
   background-repeat: no-repeat;
+  background-position: center;
 
+  border-radius: 50%;
+  border: 2px solid var(--black);
   width: 48px;
   height: 48px;
   content: "";
