@@ -365,6 +365,12 @@ body {
   padding: 6px 16px;
 }
 
+.search-button-container {
+  position: relative;
+
+  margin-right: 16px;
+}
+
 .search-button {
   position: relative;
 
@@ -374,7 +380,39 @@ body {
 
   width: 32px;
   height: 32px;
-  margin-right: 16px;
+}
+
+.search-popoper {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+
+  box-sizing: border-box;
+  width: 356px;
+  padding: 24px 16px;
+  background-color: var(--white);
+  border-radius: 4px;
+  display: none;
+}
+
+.search-popoper-opened {
+  display: block;
+}
+
+.search-popoper-input {
+  box-sizing: border-box;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-family: inherit;
+
+  width: 324px;
+  padding: 14px 16px;
+}
+
+.search-popoper-input::placeholder {
+  color: var(--light-gray);
 }
 
 .sign-in-button {
