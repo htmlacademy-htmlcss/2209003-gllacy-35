@@ -319,6 +319,7 @@ body {
   list-style-type: none;
   border-radius: 4px;
   width: 138px;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 
 .catalog-popover-opened {
@@ -409,6 +410,8 @@ body {
   padding: 24px 16px;
   background-color: var(--white);
   border-radius: 4px;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+
   display: none;
 }
 
@@ -457,6 +460,7 @@ body {
   padding-bottom: 52px;
   border-radius: 4px;
   width: 420px;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 
   display: none;
 }
@@ -576,6 +580,7 @@ body {
   width: 440px;
   border-radius: 4px;
   padding: 48px;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 
 .shopping-cart-full-popoper {
@@ -690,6 +695,7 @@ body {
 
   width: 288px;
   padding: 48px 0;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 
   display: none;
 }
