@@ -559,6 +559,152 @@ body {
   content: "";
 }
 
+.shopping-cart-container {
+  position: relative;
+}
+
+.shopping-cart-full-popoper {
+  box-sizing: border-box;
+
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+
+  background-color: var(--white);
+
+  width: 440px;
+  border-radius: 4px;
+  padding: 48px;
+}
+
+.shopping-cart-full-popoper {
+  display: none;
+}
+
+.shopping-cart-full-popoper-opened {
+  display: block;
+}
+
+.shopping-cart-title {
+  font-size: 24px;
+  line-height: 30px;
+
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.shopping-cart-list {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  padding-bottom: 32px;
+  list-style-type: none;
+  border-bottom: 1px solid var(--gray);
+}
+
+.shopping-cart-item {
+  display: grid;
+  grid-template-columns: 62px 164px 100px 16px;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "cart-image cart-name cart-cost cart-delete"
+                       "cart-image cart-calculation cart-cost cart-delete";
+  align-items: center;
+}
+
+.shopping-cart-item + .shopping-cart-item  {
+  margin-top: 24px;
+}
+
+.shopping-cart-image {
+  grid-area: cart-image;
+
+  border-radius: 50%;
+}
+
+.shopping-cart-name {
+  grid-area: cart-name;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.shopping-cart-calculation {
+  grid-area: cart-calculation;
+
+  font-size: 14px;
+  color: var(--light-gray);
+
+  margin: 0;
+}
+
+.shopping-cart-cost {
+  grid-area: cart-cost;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  margin: 0;
+}
+
+.shopping-cart-delete {
+  grid-area: cart-delete;
+
+  border: none;
+  background-color: var(--white);
+  background-image: url("../images/icons/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.shopping-cart-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.shopping-cart-buy-button {
+  width: 198px;
+  border-radius: 26px;
+  padding: 12px 32px;
+}
+
+.shopping-empty-cart-popoper {
+  box-sizing: border-box;
+
+  position: absolute;
+  top: 40px;
+  right: 0;
+
+  background-color: var(--white);
+
+  width: 288px;
+  padding: 48px 0;
+
+  display: none;
+}
+
+.shopping-empty-cart-popoper p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.shopping-empty-cart-popoper-opened {
+  display: block;
+}
+
 /* index => main-index */
 .main-index {
   flex-grow: 1;

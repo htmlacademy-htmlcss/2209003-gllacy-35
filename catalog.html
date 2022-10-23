@@ -74,7 +74,39 @@
               </form>
             </div>
           </div>
-          <button class="pink-button shopping-cart-button header-button" aria-label="Корзина выбранных товаров.">2 товара</button>
+          <div class="shopping-cart-container">
+            <button class="pink-button shopping-cart-button header-button" aria-label="Корзина выбранных товаров.">2 товара</button>
+            <div class="shopping-cart-full-popoper">
+              <h2 class="shopping-cart-title">Корзина</h2>
+              <ul class="shopping-cart-list">
+                <li class="shopping-cart-item">
+                  <img class="shopping-cart-image" src="./images/flavors/raspberry-flavor.jpg" alt="Мороженное." width="46" height="46">
+                  <p class="shopping-cart-name">Малинка</p>
+                  <p class="shopping-cart-calculation">1 кг х 310 ₽</p>
+                  <p class="shopping-cart-cost">310 ₽</p>
+                  <button class="shopping-cart-delete" type="button">
+                    <span class="visually-hidden">Удалить элемент из корзины.</span>
+                  </button>
+                </li>
+                <li class="shopping-cart-item">
+                  <img class="shopping-cart-image" src="./images/flavors/buble-gam-flavor.jpg" alt="Мороженное." width="46" height="46">
+                  <p class="shopping-cart-name">Бабл-гам</p>
+                  <p class="shopping-cart-calculation">1,5 кг х 320 ₽</p>
+                  <p class="shopping-cart-cost">480 ₽</p>
+                  <button class="shopping-cart-delete" type="button">
+                    <span class="visually-hidden">Удалить элемент из корзины.</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="shopping-cart-bottom-container">
+                <button class="red-button shopping-cart-buy-button">Оформить заказ</button>
+                <p class="shopping-cart-cost">Итого: 790 ₽</p>
+              </div>
+            </div>
+            <div class="shopping-empty-cart-popoper">
+              <p>Ваша корзина пока пуста</p>
+            </div>
+          </div>
         </div>
       </div>
     </header>
