@@ -264,6 +264,10 @@ body {
   list-style-type: none;
 }
 
+.navigation-item {
+  position: relative;
+}
+
 .header-button {
   padding: 8px 12px;
   margin-right: 4px;
@@ -295,6 +299,45 @@ body {
   line-height: 20px;
 
   padding: 8px 38px 8px 16px;
+}
+
+.catalog-popover {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  z-index: 1;
+
+  display: none;
+  box-sizing: border-box;
+
+  background-color: var(--white);
+
+  margin: 0;
+  padding: 16px;
+  padding-bottom: 14px;
+  list-style-type: none;
+  border-radius: 4px;
+  width: 138px;
+}
+
+.catalog-popover-opened {
+  display: block;
+}
+
+.catalog-link {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 6px 0;
+  color: inherit;
+}
+
+.catalog-link-news {
+  border-bottom: 1px solid var(--light-gray);
+  padding-bottom: 10px;
+  margin-bottom: 4px;
+  font-weight: 700;
 }
 
 .catalog-button::after {
