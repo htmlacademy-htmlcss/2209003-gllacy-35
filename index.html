@@ -52,7 +52,26 @@
               <input class="search-popoper-input" type="text" placeholder="Поиск по сайту">
             </div>
           </div>
-          <button class="pink-button sign-in-button header-button" aria-label="Вход в аккаунт.">Вход</button>
+          <div class="sign-in-container">
+            <button class="pink-button sign-in-button header-button" aria-label="Вход в аккаунт.">Вход</button>
+            <div class="sign-in-popover">
+              <form class="sign-in-form" action="https://echo.htmlacademy.ru/" method="get">
+                <fieldset class="sign-in-fieldset">
+                  <legend class="visually-hidden">Вход в аккаунт.</legend>
+                  <p class="sign-in-title">Личный кабинет</p>
+                  <input class="sign-in-input" type="email" name="email" placeholder="Почта">
+                  <input class="sign-in-input" type="password" name="password"  placeholder="Пароль">
+                  <div class="sign-in-bottom-container">
+                    <button class="red-button sign-in-submit" type="submit">Войти</button>
+                    <div class="sign-in-links-container">
+                      <a class="sign-in-link" href="#">Забыли пароль?</a>
+                      <a class="sign-in-link" href="#">Регистрация</a>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
           <button class="pink-button shopping-cart-button header-button" aria-label="Корзина выбранных товаров.">2 товара</button>
         </div>
       </div>

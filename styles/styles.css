@@ -415,11 +415,100 @@ body {
   color: var(--light-gray);
 }
 
+.sign-in-container {
+  position: relative;
+
+  margin-right: 16px;
+}
+
 .sign-in-button {
   position: relative;
 
   padding: 6px 16px 6px 38px;
-  margin-right: 16px;
+}
+
+.sign-in-popover {
+  box-sizing: border-box;
+
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+
+  background-color: var(--white);
+
+  padding: 48px;
+  padding-bottom: 52px;
+  border-radius: 4px;
+  width: 420px;
+
+  display: none;
+}
+
+.sign-in-popover-opened {
+  display: block;
+}
+
+.sign-in-fieldset {
+  display: flex;
+  flex-direction: column;
+
+  border: none;
+  padding: 0;
+}
+
+.sign-in-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.sign-in-input {
+  padding: 14px 16px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: inherit;
+  color: var(--black);
+
+  margin-bottom: 16px;
+}
+
+.sign-in-input::placeholder {
+  color: var(--light-gray);
+}
+
+.sign-in-bottom-container {
+  display: flex;
+
+  margin-top: 16px;
+}
+
+.sign-in-submit {
+  width: 133px;
+  border-radius: 26px;
+  margin-right: 20px;
+}
+
+.sign-in-links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.sign-in-link {
+  color: var(--black);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+
+  border-bottom: 1px solid var(--black);
+}
+
+.sign-in-link + .sign-in-link{
+  margin-top: 4px;
 }
 
 .sign-in-button::before {
