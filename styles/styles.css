@@ -1691,3 +1691,89 @@ body {
 .flavors-pagination-next::before {
   background-image: url("../images/icons/arrows/arrow-right.svg");
 }
+
+/* responce-modal */
+.responce-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(45, 52, 64, 0.3);
+
+  display: none;
+}
+
+.responce-modal-opened {
+  display: flex;
+}
+
+.responce-container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  background: var(--white);
+
+  box-sizing: border-box;
+  width: 570px;
+  padding: 64px;
+  border-radius: 8px;
+}
+
+.responce-close {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+
+  align-self: end;
+
+  background-image: url("../images/icons/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: inherit;
+  cursor: pointer;
+
+  border: none;
+
+  width: 20px;
+  height: 20px;
+}
+
+.responce-title {
+  align-self: start;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.responce-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.responce-input {
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+
+.responce-textarea {
+  padding: 14px 16px;
+  height: 150px;
+  margin-bottom: 32px;
+  resize: none;
+}
+
+.responce-button {
+  align-self: end;
+  padding: 12px 32px;
+  border-radius: 26px;
+}
