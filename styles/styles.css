@@ -1070,6 +1070,8 @@ body {
   background-color: var(--red);
   outline: none;
   box-shadow: 0 0 0 2px var(--red);
+  border: none;
+  cursor: pointer;
 
   width: 32px;
   height: 32px;
@@ -1080,14 +1082,21 @@ body {
   box-shadow: 0 0 0 2px var(--black);
 }
 
-.flavors-link:hover {
+.flavors-link:hover:not(:disabled) {
   background-color: var(--white);
   color: var(--black);
   box-shadow: 0 0 0 2px var(--red);
 }
 
-.flavors-link:active {
+.flavors-link:active:not(:disabled) {
   background-color: #ffcbd8;
+}
+
+.flavors-link:disabled {
+  background-color: var(--light-gray);
+  box-shadow: 0 0 0 2px var(--light-gray);
+  color: var(--dark-gray);
+  cursor: default;
 }
 
 /* index => about-us */
