@@ -170,9 +170,39 @@ body {
   color: inherit;
 }
 
-.text-input {
+.input {
+  font-family: inherit;
   line-height: 20px;
   font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px var(--light-gray);
+  color: inherit;
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--light-gray);
+}
+
+.input:hover:not(:disabled):not(:focus) {
+  box-shadow: 0 0 0 1px var(--black);
+}
+
+.input:focus {
+  box-shadow: 0 0 0 2px var(--black);
+}
+
+.input:invalid {
+  box-shadow: 0 0 0 1px #ea5454;
+}
+
+.input:invalid:hover {
+  box-shadow: 0 0 0 2px #ea5454;
+}
+
+.input:disabled {
+  background-color: var(--gray);
 }
 
 .boldest-text {
@@ -435,16 +465,8 @@ body {
 .search-popoper-input {
   box-sizing: border-box;
 
-  font-size: 16px;
-  line-height: 20px;
-  font-family: inherit;
-
   width: 324px;
   padding: 14px 16px;
-}
-
-.search-popoper-input::placeholder {
-  color: var(--light-gray);
 }
 
 .sign-in-container {
