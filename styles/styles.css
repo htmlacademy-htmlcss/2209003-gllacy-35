@@ -544,13 +544,13 @@ body {
   content: "";
 }
 
-.shopping-cart-button {
+.cart-button {
   position: relative;
 
   padding: 6px 16px 6px 38px;
 }
 
-.shopping-cart-button::before {
+.cart-button::before {
   position: absolute;
   top: 8px;
   left: 16px;
@@ -563,11 +563,11 @@ body {
   content: "";
 }
 
-.shopping-cart-container {
+.cart-container {
   position: relative;
 }
 
-.shopping-cart-full-popoper {
+.cart-full-popoper {
   box-sizing: border-box;
 
   position: absolute;
@@ -583,15 +583,15 @@ body {
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 
-.shopping-cart-full-popoper {
+.cart-full-popoper {
   display: none;
 }
 
-.shopping-cart-full-popoper-opened {
+.cart-full-popoper-opened {
   display: block;
 }
 
-.shopping-cart-title {
+.cart-title {
   font-size: 24px;
   line-height: 30px;
 
@@ -599,7 +599,7 @@ body {
   margin-bottom: 32px;
 }
 
-.shopping-cart-list {
+.cart-list {
   margin: 0;
   margin-bottom: 32px;
   padding: 0;
@@ -608,7 +608,7 @@ body {
   border-bottom: 1px solid var(--gray);
 }
 
-.shopping-cart-item {
+.cart-item {
   display: grid;
   grid-template-columns: 62px 164px 100px 16px;
   grid-template-rows: repeat(2, auto);
@@ -617,17 +617,17 @@ body {
   align-items: center;
 }
 
-.shopping-cart-item + .shopping-cart-item  {
+.cart-item + .cart-item  {
   margin-top: 24px;
 }
 
-.shopping-cart-image {
+.cart-image {
   grid-area: cart-image;
 
   border-radius: 50%;
 }
 
-.shopping-cart-name {
+.cart-name {
   grid-area: cart-name;
 
   font-weight: 700;
@@ -638,7 +638,7 @@ body {
   margin-bottom: 4px;
 }
 
-.shopping-cart-calculation {
+.cart-calculation {
   grid-area: cart-calculation;
 
   font-size: 14px;
@@ -647,7 +647,7 @@ body {
   margin: 0;
 }
 
-.shopping-cart-cost {
+.cart-cost {
   grid-area: cart-cost;
 
   font-weight: 700;
@@ -657,7 +657,7 @@ body {
   margin: 0;
 }
 
-.shopping-cart-delete {
+.cart-delete {
   grid-area: cart-delete;
 
   border: none;
@@ -671,20 +671,20 @@ body {
   height: 16px;
 }
 
-.shopping-cart-bottom-container {
+.cart-bottom-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.shopping-cart-buy-button {
+.cart-buy-button {
   width: 198px;
   border-radius: 26px;
   padding: 12px 32px;
 }
 
-.shopping-empty-cart-popoper {
+.cart-empty-popoper {
   box-sizing: border-box;
 
   position: absolute;
@@ -700,14 +700,14 @@ body {
   display: none;
 }
 
-.shopping-empty-cart-popoper p {
+.cart-empty-popoper p {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   text-align: center;
 }
 
-.shopping-empty-cart-popoper-opened {
+.cart-empty-popoper-opened {
   display: block;
 }
 
