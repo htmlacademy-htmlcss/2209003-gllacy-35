@@ -1896,6 +1896,36 @@ body {
   color: var(--white);
 }
 
+/* catalog => sorting-submit */
+.sorting-submit {
+  align-self: end;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: inherit, sans-serif;
+
+  background-color: var(--white-opacity-3);
+
+  border: 2px solid var(--white);
+  padding: 8px 53px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.sorting-submit:focus {
+  border-color: var(--black);
+}
+
+.sorting-submit:hover {
+  background-color: var(--white);
+  background-clip: padding-box;
+  border-color: var(--white-opacity-3);
+}
+
+.sorting-submit:active {
+  background-color: var(--white-opacity-3);
+}
 
 /* catalog => flavors */
 .catalog-flavors {
