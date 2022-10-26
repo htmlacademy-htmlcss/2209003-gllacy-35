@@ -1575,6 +1575,171 @@ body {
   margin-bottom: 40px;
 }
 
+/* catalog => form */
+.sorting-form-top-container {
+  display: flex;
+}
+
+.sorting-form-bottom-container {
+  display: flex;
+}
+
+.sorting-fieldset {
+  padding: 0;
+  border: none;
+}
+
+/* catalog => sorting-params */
+.sorting-params {
+  margin-right: 24px;
+}
+
+.sorting-params-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.sorting-params-select {
+  width: 196px;
+  padding: 8px 64px 8px 16px;
+  border-radius: 20px;
+  outline: none;
+
+  /* Убирает стрелку */
+	-moz-appearance: none;
+	-webkit-appearance: none;
+  appearance: none;
+}
+
+.sorting-params-select:hover {
+  background-color: var(--white-opacity-5);
+}
+
+.sorting-params-select:focus {
+  background-color: var(--white-opacity-5);
+  box-shadow: inset 0 0 0 2px var(--white);
+}
+
+.sorting-params-select-container {
+  position: relative;
+}
+
+.sorting-params-select-container::before {
+  position: absolute;
+  top: 11px;
+  right: 16px;
+
+  background-image: url("../images/icons/arrows/arrow-down.svg");
+  background-repeat: no-repeat;
+
+  width: 16px;
+  height: 16px;
+  content: "";
+}
+
+/* catalog => sorting-price */
+.sorting-price {
+  margin-right: 24px;
+}
+
+.sorting-price-range {
+  margin-bottom: 8px;
+}
+
+.sorting-price-range p {
+  margin: 0;
+}
+
+.sorting-price-range-bar {
+  position: relative;
+
+  box-sizing: border-box;
+
+  background-color: var(--white-opacity-3);
+  border-radius: 20px;
+  padding: 19px 16px 17px;
+  width: 196px;
+}
+
+.sorting-price-range-bar::before {
+  position: absolute;
+  z-index: 1;
+
+  height: 2px;
+  width: 164px;
+  background-color: var(--dark-gray);
+  opacity: 0.3;
+
+  content: "";
+}
+
+.sorting-price-black-line {
+  position: absolute;
+  left: 48px;
+  z-index: 2;
+
+  background-color: var(--dark-gray);
+
+  height: 2px;
+  width: 56px;
+}
+
+.sorting-price-button {
+  position: absolute;
+  top: 12px;
+  z-index: 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--black);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.sorting-price-button::before {
+  position: absolute;
+  z-index: 4;
+
+  width: 6px;
+  height: 6px;
+  background-color: var(--white);
+  border-radius: 50%;
+  content: "";
+}
+
+.sorting-price-button-min {
+  left: 40px;
+}
+
+.sorting-price-button-max {
+  left: 100px;
+}
+
+.sorting-price-button:hover,
+.sorting-price-button:focus {
+  background-color: var(--white);
+}
+
+.sorting-price-button:hover::before,
+.sorting-price-button:focus::before {
+  background-color: var(--black);
+}
+
+.sorting-price-button:focus {
+  box-shadow: inset 0 0 0 2px var(--black);
+}
+
+.sorting-price-button:active {
+  background-color: var(--black);
+  box-shadow: none;
+}
+
 /* catalog => flavors */
 .catalog-flavors {
   border-bottom: 1px solid var(--white-opacity-3);
