@@ -1575,7 +1575,14 @@ body {
   margin-bottom: 40px;
 }
 
-/* catalog => form */
+/* catalog => sorting-form */
+.sorting-form {
+  font-size: 14px;
+  line-height: 20px;
+
+  margin-bottom: 95px;
+}
+
 .sorting-form-top-container {
   display: flex;
 
@@ -1822,17 +1829,77 @@ body {
   background-color: var(--white);
 }
 
+/* catalog => fillers */
+.sorting-fillers {
+  margin-right: 16px;
+}
+
+.sorting-fillers-legend {
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.sorting-fillers-list {
+  display: flex;
+
+  background-color: var(--white-opacity-3);
+
+  border-radius: 18px;
+  margin: 0;
+  padding: 10px 24px;
+  list-style-type: none;
+}
+
+.sorting-fillers-item {
+  padding-left: 24px;
+}
+
+.sorting-fillers-item + .sorting-fillers-item {
+  margin-left: 16px;
+}
+
+.sorting-fillers-label {
+  position: relative;
+
+  cursor: pointer;
+}
+
+.sorting-fillers-unchecked-toggle {
+  position: absolute;
+  top: 1px;
+  left: -24px;
+}
+
+.sorting-fillers-checked-toggle {
+  position: absolute;
+  top: 1px;
+  left: -24px;
+
+  opacity: 0;
+}
+
+.sorting-fillers-checkbox:checked ~ .sorting-fillers-unchecked-toggle {
+  opacity: 0;
+}
+
+.sorting-fillers-checkbox:checked ~ .sorting-fillers-checked-toggle {
+  opacity: 1;
+}
+
+.sorting-fillers-label:hover .sorting-fillers-toggle-container,
+.sorting-fillers-checkbox:focus ~ .sorting-fillers-unchecked-toggle,
+.sorting-fillers-checkbox:focus ~ .sorting-fillers-checked-toggle {
+  color: rgba(45, 52, 64, 0.4);
+}
+
+.sorting-fillers-label:active .sorting-fillers-toggle-container {
+  color: var(--white);
+}
+
+
 /* catalog => flavors */
 .catalog-flavors {
   border-bottom: 1px solid var(--white-opacity-3);
-}
-
-/* catalog => sorting-form */
-.sorting-form {
-  font-size: 14px;
-  line-height: 20px;
-
-  margin-bottom: 95px;
 }
 
 /* catalog => flavors-list */
