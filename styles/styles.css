@@ -1377,6 +1377,66 @@ body {
   border-radius: 26px;
 }
 
+.delivery-info-date {
+  position: relative;
+
+  display: inline;
+}
+
+.delivery-info-button {
+  position: relative;
+  top: -5px;
+
+  background-image: url("../images/icons/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: none;
+  background-color: inherit;
+  padding: 0;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.delivery-info-text {
+  display: none;
+
+  position: absolute;
+  top: -9px;
+  right: -190px;
+
+  font-family: inherit, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+
+  border: 1px solid var(--dark-gray);
+  background-color: var(--white);
+  width: 162px;
+  padding: 10px 8px;
+  margin: 0;
+}
+
+.delivery-info-text::before {
+  position: absolute;
+  left: -7.5px;
+  top: 11px;
+
+  background-color: var(--white);
+  border: 1px solid var(--dark-gray);
+  border-right: none;
+  border-top: none;
+  transform: rotate(45deg);
+
+  width: 12px;
+  height: 12px;
+  content: "";
+}
+
+.delivery-info-button:hover + .delivery-info-text {
+  display: block;
+}
+
 /* index => contacts */
 .contacts {
   display: flex;
