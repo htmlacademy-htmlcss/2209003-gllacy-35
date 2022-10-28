@@ -213,15 +213,13 @@ body {
 
 /* social-media */
 .social-media {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 24px);
+  gap: 10px 16px;
 
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.social-media-item + .social-media-item {
-  margin-left: 12px;
 }
 
 .social-media-link {
@@ -283,6 +281,8 @@ body {
 .navigation-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  max-width : 680px;
 
   margin: 0;
   padding: 0;
@@ -417,6 +417,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  max-width: 480px;
 }
 
 .phone-link {
@@ -1822,6 +1824,7 @@ body {
 
 .sorting-fat-list {
   display: flex;
+  flex-wrap: wrap;
 
   background-color: var(--white-opacity-3);
 
@@ -1907,6 +1910,7 @@ body {
 
 .sorting-fillers-list {
   display: flex;
+  flex-wrap: wrap;
 
   background-color: var(--white-opacity-3);
 
@@ -2013,15 +2017,18 @@ body {
 
 .flavors-pagination-link {
   margin-left: 486px;
-  margin-right: auto;
+  margin-right: 20px;
   padding: 12px 32px;
   border-radius: 26px;
+  min-width: 180px;
 }
 
 .flavors-pagination {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
+  margin-left: auto;
   padding: 0;
   list-style-type: none;
 }
