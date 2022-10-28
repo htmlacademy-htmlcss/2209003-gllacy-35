@@ -1388,16 +1388,17 @@ body {
   display: inline;
 }
 
-.delivery-info-button {
+.delivery-info-tooltip {
   position: relative;
-  top: -5px;
+  top: 2px;
+
+  display: inline-block;
 
   background-image: url("../images/icons/info.svg");
   background-repeat: no-repeat;
   background-position: center;
 
-  border: none;
-  background-color: inherit;
+  margin: 0;
   padding: 0;
   cursor: pointer;
   width: 16px;
@@ -1438,7 +1439,7 @@ body {
   content: "";
 }
 
-.delivery-info-button:hover + .delivery-info-text {
+.delivery-info-tooltip:hover + .delivery-info-text {
   display: block;
 }
 
