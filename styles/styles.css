@@ -656,12 +656,17 @@ body {
 }
 
 .cart-image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
   grid-area: cart-image;
 
   border-radius: 50%;
 }
 
 .cart-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: cart-name;
 
   font-weight: 700;
@@ -673,6 +678,8 @@ body {
 }
 
 .cart-calculation {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: cart-calculation;
 
   font-size: 14px;
@@ -682,6 +689,9 @@ body {
 }
 
 .cart-cost {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
   grid-area: cart-cost;
 
   font-weight: 700;
@@ -692,6 +702,9 @@ body {
 }
 
 .cart-delete {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
   grid-area: cart-delete;
 
   border: none;
@@ -1719,9 +1732,8 @@ body {
   line-height: 20px;
 
   /* Убирает стрелку */
-	-moz-appearance: none;
 	-webkit-appearance: none;
-  appearance: none;
+ appearance: none;
 }
 
 .sorting-params-select:hover {
