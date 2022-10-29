@@ -1020,7 +1020,7 @@ body {
 .flavors-list {
   display: grid;
   grid-template-columns: repeat(4, 270px);
-  gap: 91px 30px;
+  gap: 91px 29px;
 
   padding: 0;
   margin: 0;
@@ -1039,8 +1039,7 @@ body {
 
   background-color: var(--white);
 
-  padding: 135px 40px;
-  padding-bottom: 24px;
+  padding: 133px 40px 24px;
   border-radius: 8px;
 }
 
@@ -1422,7 +1421,7 @@ body {
   top: -9px;
   right: -190px;
 
-  font-family: inherit, sans-serif;
+  font-family: inherit;
   font-size: 12px;
   line-height: 16px;
 
@@ -1656,7 +1655,7 @@ body {
 
 .catalog-title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 /* catalog => sorting-form */
@@ -1684,7 +1683,7 @@ body {
 
 /* catalog => sorting-params */
 .sorting-params {
-  margin-right: 24px;
+  margin-right: 20px;
 }
 
 .sorting-params-label {
@@ -1692,12 +1691,13 @@ body {
 
   display: block;
   margin-bottom: 8px;
+  margin-left: 13px;
 }
 
 .sorting-params-label::after{
   position: absolute;
-  top: calc(100% + 18px);
-  right: 16px;
+  top: calc(100% + 17.5px);
+  right: 14px;
 
   background-image: url("../images/icons/arrows/arrow-down.svg");
   background-repeat: no-repeat;
@@ -1709,10 +1709,14 @@ body {
 }
 
 .sorting-params-select {
-  width: 196px;
-  padding: 8px 64px 8px 16px;
+  width: 194px;
+  padding: 8px 64px 8px 14px;
   border-radius: 20px;
   outline: none;
+
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
 
   /* Убирает стрелку */
 	-moz-appearance: none;
@@ -1731,11 +1735,12 @@ body {
 
 /* catalog => sorting-price */
 .sorting-price {
-  margin-right: 24px;
+  margin-right: 22px;
 }
 
 .sorting-price-range {
   margin-bottom: 8px;
+  margin-left: 17px;
 }
 
 .sorting-price-range p {
@@ -1755,6 +1760,7 @@ body {
 
 .sorting-price-range-bar::before {
   position: absolute;
+  top: 16px;
   z-index: 1;
 
   height: 2px;
@@ -1767,18 +1773,19 @@ body {
 
 .sorting-price-black-line {
   position: absolute;
+  top: 16px;
   left: 48px;
   z-index: 2;
 
   background-color: var(--dark-gray);
 
   height: 2px;
-  width: 56px;
+  width: 70px;
 }
 
 .sorting-price-button {
   position: absolute;
-  top: 12px;
+  top: 9px;
   z-index: 3;
 
   display: flex;
@@ -1806,11 +1813,11 @@ body {
 }
 
 .sorting-price-button-min {
-  left: 40px;
+  left: 41px;
 }
 
 .sorting-price-button-max {
-  left: 100px;
+  left: 114px;
 }
 
 .sorting-price-button:hover,
@@ -1836,6 +1843,7 @@ body {
 .sorting-fat-legend {
   padding: 0;
   margin-bottom: 8px;
+  margin-left: 17px;
 }
 
 .sorting-fat-list {
@@ -1855,7 +1863,7 @@ body {
 }
 
 .sorting-fat-item + .sorting-fat-item {
-  margin-left: 16px;
+  margin-left: 17px;
 }
 
 .sorting-fat-label {
@@ -1922,6 +1930,7 @@ body {
 .sorting-fillers-legend {
   padding: 0;
   margin-bottom: 8px;
+  margin-left: 13px;
 }
 
 .sorting-fillers-list {
@@ -1989,7 +1998,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
-  font-family: inherit, sans-serif;
+  font-family: inherit;
 
   background-color: var(--white-opacity-3);
 
@@ -2055,6 +2064,10 @@ body {
   align-items: center;
 }
 
+.flavors-pagination-item + .flavors-pagination-item {
+  margin-left: 1px;
+}
+
 .flavors-pagination-button {
   display: flex;
   justify-content: center;
@@ -2097,7 +2110,7 @@ body {
 }
 
 .flavors-pagination-previous {
-  margin-right: 8px;
+  margin-right: 2px;
 }
 
 .flavors-pagination-next {
