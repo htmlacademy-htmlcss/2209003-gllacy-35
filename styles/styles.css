@@ -271,11 +271,16 @@ body {
 }
 
 .page-header-container {
+  position: relative;
+  top: -2px;
+  left: -2px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 18px;
 }
 
 .navigation-list {
@@ -334,7 +339,7 @@ body {
   opacity: 0.3;
 }
 
-.logo {
+.logo img {
   margin-right: 16px;
 }
 
@@ -343,6 +348,7 @@ body {
 
   font-size: 16px;
   line-height: 20px;
+  font-family: inherit;
 
   padding: 8px 38px 8px 16px;
 }
@@ -480,6 +486,8 @@ body {
 .sign-in-button {
   position: relative;
 
+  font-family: inherit;
+
   padding: 6px 16px 6px 38px;
 }
 
@@ -577,6 +585,8 @@ body {
 
 .cart-button {
   position: relative;
+
+  font-family: inherit;
 
   padding: 6px 16px 6px 38px;
 }
@@ -750,19 +760,23 @@ body {
 .introduction-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
+.introduction-item + .introduction-item {
+  margin-left: 79px;
+}
+
 .introduction-current-item {
   position: relative;
 
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-basis: 846px;
+  flex-basis: 866px;
 }
 
 .introduction-current-item .introduction-desc {
@@ -809,7 +823,7 @@ body {
   content: "";
 }
 
-.introduction-button {
+.introduction-item:not(.introduction-current-item) .introduction-button {
   display: none;
 }
 
@@ -834,13 +848,14 @@ body {
 }
 
 .introduction-item:not(.introduction-current-item) img {
+  object-fit: cover;
   width: 66px;
   height: 150px;
 }
 
 .introduction-image-button  {
   position: absolute;
-  top: 47.5%;
+  top: 46.5%;
   box-sizing: border-box;
 
   display: flex;
@@ -860,11 +875,11 @@ body {
 }
 
 .introduction-previous-image {
-  left: 521px;
+  left: 542px;
 }
 
 .introduction-next-image {
-  right: 300px;
+  right: 278px;
 }
 
 .introduction-image-button:disabled {
@@ -999,7 +1014,7 @@ body {
 
 .flavors-main-text {
   margin: 0;
-  margin-bottom: 118px;
+  margin-bottom: 107px;
 }
 
 .flavors-list {
@@ -1074,7 +1089,6 @@ body {
   color: var(--white);
   background-color: var(--red);
   outline: none;
-  box-shadow: 0 0 0 2px var(--red);
   border: none;
   cursor: pointer;
 
@@ -1184,18 +1198,14 @@ body {
 /* index => aside */
 .aside-index {
   margin-bottom: 80px;
-}
-
-.aside-index-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 570px);
+  gap: 30px;
 }
 
 /* index => new-blog */
 .new-blog-link {
   display: flex;
-
-  flex-basis: 570px;
 }
 
 .new-blog {
@@ -1238,7 +1248,6 @@ body {
   background-image: url("../images/background/mailing-list-bg.png");
   background-size: 100% auto;
 
-  flex-basis: 570px;
   padding: 6px;
   border-radius: 16px;
 }
@@ -1330,6 +1339,7 @@ body {
   flex-direction: column;
 
   background-color: var(--white);
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 
   border-radius: 8px;
 }
@@ -1464,8 +1474,9 @@ body {
 
   width: 343px;
   padding: 40px;
-  padding-bottom: 0.;
+  padding-bottom: 0;
   margin-bottom: 64px;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
 
   background-color: var(--white);
   border-radius: 8px;
@@ -1503,10 +1514,13 @@ body {
 
 .contacts-phone {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 }
 
 .contacts-phone .contacts-text {
+  position: relative;
+  top: -6px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -1523,7 +1537,7 @@ body {
   font-size: 14px;
   line-height: 20px;
 
-  padding-top: 48px;
+  padding-top: 50px;
   margin-bottom: 48px;
 }
 
@@ -1540,12 +1554,13 @@ body {
 .page-footer-for-suppliers {
   display: grid;
   grid-template-columns: 126px 182px;
-  gap: 8px 24px;
+  gap: 8px 21px;
   align-content: start;
 
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-left: 22px;
   margin-right: auto;
 }
 
@@ -1558,7 +1573,7 @@ body {
 .page-footer-link-for-suppliers::before {
   position: absolute;
   top: 2px;
-  left: -20px;
+  left: -25px;
 
   background-image: url("../images/icons/heart.svg");
   background-repeat: no-repeat;
@@ -1571,13 +1586,13 @@ body {
 .page-footer-copyright {
   margin-right: 15px;
 
-  width: 200px;
+  width: 193px;
 }
 
 .logo-html-academy {
   display: block;
 
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .page-footer-copyright-text {
