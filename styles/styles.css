@@ -1447,7 +1447,7 @@ body {
 
 .delivery-info-text::before {
   position: absolute;
-  left: -7.5px;
+  left: -7px;
   top: 11px;
 
   background-color: var(--white);
@@ -1652,7 +1652,7 @@ body {
 .breadcrumbs-item + .breadcrumbs-item::before {
   position: absolute;
   left: -20px;
-  top: 5.5px;
+  top: 6px;
 
   background-image: url("../images/icons/arrows/chevrons-right.svg");
   background-repeat: no-repeat;
@@ -1709,7 +1709,7 @@ body {
 
 .sorting-params-label::after{
   position: absolute;
-  top: calc(100% + 17.5px);
+  top: calc(100% + 18px);
   right: 14px;
 
   background-image: url("../images/icons/arrows/arrow-down.svg");
