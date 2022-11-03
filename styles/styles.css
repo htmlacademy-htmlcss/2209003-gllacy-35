@@ -1047,9 +1047,6 @@ body {
 .flavors-item {
   position: relative;
 
-  display: flex;
-  flex-direction: column;
-
   background-color: var(--white);
 
   padding: 133px 40px 24px;
@@ -1061,6 +1058,8 @@ body {
   top: -51px;
   left: 51px;
 
+  width: 168px;
+  height: 168px;
   border-radius: 50%;
 }
 
