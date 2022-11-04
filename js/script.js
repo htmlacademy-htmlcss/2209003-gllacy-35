@@ -1,8 +1,13 @@
 'use strict';
 
-const body = document.body;
-
-function openPopover(buttonSelector, popoverSelector, popoverSelectorForOpen = popoverSelector + '-opened') {
+// header buttons
+function openPopover(
+    buttonSelector,
+    popoverSelector,
+    oldButtonClass = 'header-button',
+    activeButtonClass = 'header-button-active',
+    popoverSelectorForOpen = popoverSelector + '-opened'
+  ) {
   const button = document.querySelector(buttonSelector);
   const popover = document.querySelector(popoverSelector);
   popoverSelectorForOpen = popoverSelectorForOpen.slice(1);
@@ -11,36 +16,47 @@ function openPopover(buttonSelector, popoverSelector, popoverSelectorForOpen = p
     const target = event.target;
 
     if (button.contains(target)) {
+      button.classList.toggle(oldButtonClass);
+      button.classList.toggle(activeButtonClass);
       popover.classList.toggle(popoverSelectorForOpen);
     } else if (!popover.contains(target)) {
+      button.classList.remove(activeButtonClass);
+      button.classList.add(oldButtonClass);
       popover.classList.remove(popoverSelectorForOpen);
     }
   }
 
-  body.addEventListener('click', buttonClickHandler);
+  document.body.addEventListener('click', buttonClickHandler);
 }
 
-// catalog button
 openPopover('.catalog-button', '.catalog-popover');
-
-// search button
 openPopover('.search-button', '.search-popover');
-
-// sign-in button
 openPopover('.sign-in-button', '.sign-in-popover')
-
-// cart button
 openPopover('.cart-button', '.cart-full-popover');
 
 // responce-modal
-const openModalButton = document.querySelector('.contacts-button');
 const modal = document.querySelector('.responce-modal');
+const openModalButton = document.querySelector('.contacts-button');
 const closeModalButton = modal.querySelector('.responce-close');
 
-openModalButton.addEventListener('click', () => {
+function hideModal() {
+  modal.classList.remove('responce-modal-opened');
+}
+
+function showModal() {
   modal.classList.add('responce-modal-opened')
+}
+
+// open modal
+openModalButton.addEventListener('click', showModal);
+
+// close modal
+closeModalButton.addEventListener('click', hideModal);
+
+modal.addEventListener('click', (event) => {
+  event.target === modal ? hideModal() : null;
 });
 
-closeModalButton.addEventListener('click', () => {
-  modal.classList.remove('responce-modal-opened');
+document.body.addEventListener('keydown', (event) => {
+  event.key === "Escape" ? hideModal() : null;
 });
