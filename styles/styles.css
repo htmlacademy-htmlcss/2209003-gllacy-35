@@ -193,11 +193,11 @@ body {
   box-shadow: 0 0 0 2px var(--black);
 }
 
-.input:invalid {
+.input:invalid:not(:placeholder-shown) {
   box-shadow: 0 0 0 1px #ea5454;
 }
 
-.input:invalid:hover {
+.input:invalid:hover:not(:placeholder-shown) {
   box-shadow: 0 0 0 2px #ea5454;
 }
 
