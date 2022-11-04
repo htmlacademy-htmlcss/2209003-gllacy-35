@@ -473,6 +473,10 @@ body {
 .search-popover-input {
   box-sizing: border-box;
 
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+
   width: 324px;
   padding: 14px 16px;
 }
@@ -540,7 +544,7 @@ body {
 
 .sign-in-input {
   padding: 14px 16px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   font-family: inherit;
   color: var(--black);
@@ -1296,6 +1300,8 @@ body {
 
 .mailing-list-form-submit {
   display: inline-block;
+
+  font-family: inherit;
 
   padding: 12px 32px;
   border-radius: 26px;
@@ -2073,6 +2079,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  line-height: 20px;
 }
 
 .flavors-pagination-item + .flavors-pagination-item {
