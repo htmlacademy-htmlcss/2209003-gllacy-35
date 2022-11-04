@@ -31,3 +31,16 @@ openPopover('.sign-in-button', '.sign-in-popover')
 
 // cart button
 openPopover('.cart-button', '.cart-full-popover');
+
+// responce-modal
+const openModalButton = document.querySelector('.contacts-button');
+const modal = document.querySelector('.responce-modal');
+const closeModalButton = modal.querySelector('.responce-close');
+
+openModalButton.addEventListener('click', () => {
+  modal.classList.add('responce-modal-opened')
+});
+
+closeModalButton.addEventListener('click', () => {
+  modal.classList.remove('responce-modal-opened');
+});
