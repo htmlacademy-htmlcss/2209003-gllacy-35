@@ -15,6 +15,10 @@ function openPopover(
   function buttonClickHandler(event) {
     const target = event.target;
 
+    if (target === button) {
+      event.preventDefault();
+    }
+
     if (button.contains(target)) {
       button.classList.toggle(oldButtonClass);
       button.classList.toggle(activeButtonClass);
@@ -43,7 +47,8 @@ function hideModal() {
   modal.classList.remove('responce-modal-opened');
 }
 
-function showModal() {
+function showModal(event) {
+  event.preventDefault();
   modal.classList.add('responce-modal-opened')
 }
 
